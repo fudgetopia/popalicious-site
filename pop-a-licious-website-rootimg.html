@@ -5697,6 +5697,8 @@
         var verificationEmail = "";
         var validatedDiscountCode = "";
         var validatedDiscountType = "";
+        var pendingRewardCode = "";
+        var pendingRewardCartKey = "";
         var shippingRate = null;
         var shippingRateTimer = null;
         var shippingRatePromise = null;
@@ -9682,8 +9684,17 @@
               document.getElementById("redeemedCodeTitle").textContent = "Merch reward redeemed!";
               document.getElementById("redeemedCodeValue").textContent = data.code;
               document.getElementById("redeemedCodeCopy").setAttribute("data-copy-code", data.code);
-              statusEl.textContent = "Redeemed " + data.item + " for " + data.kernels_spent + " Kernels. Code: " + data.code;
+              // Auto-add the redeemed item to the customer's bag and carry
+              // the code to checkout so it prices as free + shipping
+              // (user directive, Oct 21 2026).
+              var rewardCartKey = "merch_" + sku + "_" + size;
+              if (!cart[rewardCartKey]) cart[rewardCartKey] = 1;
+              pendingRewardCode = data.code;
+              pendingRewardCartKey = rewardCartKey;
+              updateCart();
+              statusEl.textContent = "Redeemed " + data.item + " for " + data.kernels_spent + " Kernels — it's in your bag, and your code (" + data.code + ") will apply at checkout.";
               loadMemberRewards(); // Refresh balance
+              openDrawer();
             } else {
               statusEl.textContent = data.error || "Redemption failed.";
             }
@@ -11788,6 +11799,8 @@
           hideViews();
           orderSuccessPage.hidden = false;
           currentProductIndex = null;
+          pendingRewardCode = "";
+          pendingRewardCartKey = "";
           cart = {};
           updateCart();
           closeDrawer();
@@ -12609,6 +12622,19 @@
           drawerTitle.textContent = "Checkout";
           clearCheckoutMessages();
           setDiscountPanel(Boolean(document.getElementById("checkoutDiscountCode").value.trim()));
+          // Pre-fill a just-redeemed merch reward code when its item is in
+          // the bag, so the customer never has to type it (Oct 21 2026).
+          if (pendingRewardCode && cart[pendingRewardCartKey] > 0 && !document.getElementById("checkoutDiscountCode").value.trim()) {
+            document.getElementById("checkoutDiscountCode").value = pendingRewardCode;
+            validatedDiscountCode = pendingRewardCode;
+            validatedDiscountType = "reward";
+            setDiscountPanel(true);
+            document.getElementById("checkoutDiscountDescription").textContent = "Pop-A-Licious Rewards code";
+            document.getElementById("checkoutDiscountResult").hidden = false;
+            var pendingStatus = document.getElementById("checkoutDiscountStatus");
+            pendingStatus.textContent = "Reward code added. It will be verified when you pay.";
+            pendingStatus.setAttribute("data-state", "success");
+          }
           var items = orderItems();
           document.getElementById("checkoutSummary").innerHTML = items.map(function (item) {
             return '<div class="summary-line"><span>' + item.name + ' × ' + item.quantity + '</span><span>' + money((item.amount_cents * item.quantity) / 100) + '</span></div>';
