@@ -1,0 +1,6 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/poparhjo/public_html/
+    - /bin/cp pop-a-licious-website-rootimg.html $DEPLOYPATH/index.html
+    - /bin/chmod 0644 $DEPLOYPATH/index.html
