@@ -293,7 +293,14 @@ button { font-family: inherit; }
 </style>
 </head>
 <body>
-<div id="loginView" class="login-wrap">
+<div id="bootView" class="login-wrap">
+  <div class="login-card">
+    <h1>Pop-A-Licious ERP</h1>
+    <p class="login-sub">Loading&hellip;</p>
+    <noscript><p>JavaScript is required for the ERP. Please enable it and reload.</p></noscript>
+  </div>
+</div>
+<div id="loginView" class="login-wrap" hidden>
   <div class="login-card">
     <h1>Pop-A-Licious ERP</h1>
     <p class="login-sub">Inventory &amp; Purchasing</p>
@@ -349,6 +356,25 @@ button { font-family: inherit; }
 </div>
 <script>
 "use strict";
+
+/* ---------- boot loading state (no login flash) ---------- */
+// The login form used to be the page's default paint, so a signed-in admin
+// arriving on the shared cookie saw it for the seconds the session check
+// takes. The form is now hidden in the HTML and a "Loading…" card paints
+// instead; the check then reveals the app or the form. This watchdog is
+// registered first, so it still fires if later code throws: after 10s with
+// no view revealed, fall back to the login form rather than sitting on
+// "Loading…" forever.
+function hideBoot() {
+  var b = document.getElementById("bootView");
+  if (b) b.hidden = true;
+}
+setTimeout(function () {
+  var b = document.getElementById("bootView");
+  var l = document.getElementById("loginView");
+  var a = document.getElementById("appView");
+  if (b && !b.hidden && l && l.hidden && a && a.hidden) { b.hidden = true; l.hidden = false; }
+}, 10000);
 
 /* ============ Standalone ERP shell ============ */
 var API_BASE = "https://popalicious-gift-cards-production.up.railway.app";
@@ -502,6 +528,7 @@ function doLogout(message) {
   if (message) loginError(message);
 }
 function showLogin() {
+  hideBoot();
   document.getElementById("loginView").hidden = false;
   document.getElementById("setupView").hidden = true;
   document.getElementById("appView").hidden = true;
@@ -551,6 +578,7 @@ function erpHandleAcceptOrderIntent(orderNumber) {
   });
 }
 function showWholesaleSetup() {
+  hideBoot();
   document.getElementById("loginView").hidden = true;
   document.getElementById("appView").hidden = true;
   document.getElementById("setupView").hidden = false;
@@ -589,6 +617,7 @@ async function doWholesaleSetup(event) {
   }
 }
 function enterApp() {
+  hideBoot();
   var s = erpSession();
   document.getElementById("loginView").hidden = true;
   document.getElementById("setupView").hidden = true;
@@ -630,6 +659,7 @@ function wsStatusLabel(s) {
     ready: "Ready", shipped: "Shipped", picked_up: "Picked up", cancelled: "Cancelled"}[s] || s;
 }
 function renderWholesaleRoute() {
+  hideBoot();
   var h = location.hash || "#/";
   document.getElementById("loginView").hidden = true;
   document.getElementById("setupView").hidden = true;
@@ -1241,6 +1271,7 @@ function renderRoute() {
   if (erpSession().role === "wholesale") { renderWholesaleRoute(); return; }
   var openModals = document.querySelectorAll(".erp-modal-overlay");
   openModals.forEach(function (m) { m.parentNode.removeChild(m); });
+  hideBoot();
   document.getElementById("loginView").hidden = true;
   document.getElementById("appView").hidden = false;
   var r = currentRoute();
