@@ -1,0 +1,1234 @@
+{
+  "version": 1,
+  "schema_version": 1,
+  "updated": "2026-11-20",
+  "price_usd": 8,
+  "note": "Single source of truth for Pop-A-Licious flavors. Site runtime reads name/slug/category/price_usd/long_description/photo/gallery_images/gtin_14/gs1_digital_link/qr_image (fetch flavors.json from the site origin). ERP/GS1 pipeline reads gs1_name/site_name/slug/category/colors/image/galleryImages/description/upc_a/upc_source/qr_status. name = site display spelling (Cookies N' Creme, Salt & Vinegar); gs1_name = GS1/CSV spelling (Cookie and Cream, Salt and Vinegar). description stays null until the user types one at staging - never invent copy. Nashville Hot's audit-assigned UPC 602581038016 / GTIN-14 00602581038016 / QR qr/nashville-hot.png folded in Nov 20, 2026 (integration). Canonical per-flavor schema_version: 1 on every flavor.",
+  "flavors": [
+    {
+      "name": "Alien Mix",
+      "site_name": "Alien Mix",
+      "gs1_name": "Alien Mix",
+      "slug": "alien-mix",
+      "category": "sweet",
+      "price_usd": 8,
+      "short_description": "",
+      "long_description": "<section class=\"flavor-description alien-description\" aria-labelledby=\"alienWhyTitle\">\n              <p class=\"flavor-tagline\">A Little Sweet. A Little Sour. Completely Out of This World. 👽🍿</p>\n              <p>Prepare your taste buds for a snack from another planet! Alien Mix Popcorn combines crunchy gourmet popcorn with creamy white chocolate, colorful green sprinkles, sweet sugar cookie mix, and a trio of chewy gummy worms—two classic gummy worms and one sour gummy worm—for an out-of-this-world snacking experience.</p>\n              <p>Every handful brings something different: creamy white chocolate, sweet sugar-cookie flavor, crunchy popcorn, colorful sprinkles, and chewy gummy candy with just the right pop of sour.</p>\n              <h2 id=\"alienWhyTitle\">Why You'll Love It</h2>\n              <ul class=\"flavor-highlights\">\n                <li>🍿 <strong>Gourmet Popcorn</strong> – Light, crunchy popcorn that's ready for takeoff.</li>\n                <li>🤍 <strong>White Chocolate</strong> – Smooth, creamy sweetness in every bite.</li>\n                <li>🍪 <strong>Sugar Cookie Mix</strong> – A delicious bakery-style sweetness that makes this popcorn taste like dessert.</li>\n                <li>💚 <strong>Green Sprinkles</strong> – Bright, colorful fun that makes every bag look as wild as it tastes.</li>\n                <li>🪱 <strong>Gummy Worms</strong> – Two classic gummy worms plus one sour gummy worm for a chewy surprise.</li>\n              </ul>\n              <h2>Your Mission: Finish the Bag</h2>\n              <p>Whether you're planning a movie night, throwing a party, looking for a unique gift, or simply want a snack that's anything but ordinary, Alien Mix Popcorn is ready for liftoff.</p>\n              <p class=\"flavor-rhythm\">Sweet. Crunchy. Chewy. Sour. Totally Alien.</p>\n              <h2>The Bottom Line</h2>\n              <p class=\"flavor-finale\"><strong>White Chocolate + Sugar Cookie + Gummy Worms + Sprinkles + Popcorn = AN OUT-OF-THIS-WORLD SNACK.</strong></p>\n              <p>Grab a bag. Take a bite. Prepare for liftoff. 🚀👽</p>\n              <p class=\"flavor-finale\"><strong>Alien Mix Popcorn — It's Not Just Butter &amp; Salt!</strong></p>\n            </section>",
+      "description": null,
+      "photo": "/img-389e84eb08b80d9f.webp",
+      "image": "/img-389e84eb08b80d9f.webp",
+      "gallery_images": [
+        {
+          "src": "/img-389e84eb08b80d9f.webp",
+          "alt": "Alien Mix gourmet popcorn with gummy worms and green sprinkles",
+          "fit": "cover"
+        },
+        {
+          "src": "/img-ce30ab2f7c5a381b.webp",
+          "alt": "Alien Mix Popcorn nutrition facts and ingredient label",
+          "fit": "contain"
+        }
+      ],
+      "galleryImages": [
+        {
+          "src": "/img-389e84eb08b80d9f.webp",
+          "alt": "Alien Mix gourmet popcorn with gummy worms and green sprinkles",
+          "fit": "cover"
+        },
+        {
+          "src": "/img-ce30ab2f7c5a381b.webp",
+          "alt": "Alien Mix Popcorn nutrition facts and ingredient label",
+          "fit": "contain"
+        }
+      ],
+      "colors": [
+        "#8cdc4a",
+        "#7534c8"
+      ],
+      "upc_a": "602581038160",
+      "gtin_14": "00602581038160",
+      "gs1_digital_link": "https://pop-a-licious.com/01/00602581038160",
+      "qr_image": "/qr/alien-mix.png",
+      "qr_status": "label-read",
+      "upc_source": "label-images/Alien_Mix-1.png",
+      "status": "live",
+      "schema_version": 1
+    },
+    {
+      "name": "Bacon",
+      "site_name": "Bacon",
+      "gs1_name": "Bacon",
+      "slug": "bacon",
+      "category": "savory",
+      "price_usd": 8,
+      "short_description": "",
+      "long_description": "<section class=\"flavor-description\" aria-labelledby=\"baconWhyTitle\">\n              <p class=\"flavor-tagline\">Big Bacon Flavor. Crunchy Popcorn. Zero Boring Bites. 🥓🍿</p>\n              <p>Say hello to the popcorn for bacon lovers! Bacon Popcorn takes crunchy gourmet popcorn and loads it with savory bacon powder, delivering delicious bacon flavor throughout every handful.</p>\n              <p>It's salty, savory, smoky, and seriously snackable. Whether you're a lifelong bacon fanatic or just looking for a popcorn flavor that's anything but ordinary, this is one bag that's built to satisfy your cravings.</p>\n              <h2 id=\"baconWhyTitle\">Why You'll Love It</h2>\n              <ul class=\"flavor-highlights\">\n                <li>🍿 <strong>Gourmet Popcorn</strong> – Light, crunchy popcorn that's perfect for snacking.</li>\n                <li>🥓 <strong>Bacon Powder</strong> – Savory bacon flavor coats the popcorn for delicious flavor in every bite.</li>\n                <li>🔥 <strong>Bold &amp; Savory</strong> – A satisfying combination of popcorn crunch and classic bacon flavor.</li>\n                <li>😋 <strong>Seriously Snackable</strong> – Perfect for movie nights, game days, parties, road trips, or anytime the craving hits.</li>\n              </ul>\n              <h2>Bacon Lovers, This One's For You</h2>\n              <p>Forget ordinary popcorn. Bacon Popcorn brings the unmistakable flavor of bacon to one of America's favorite snacks.</p>\n              <p>Grab a handful and you'll get that savory bacon experience with the satisfying crunch of gourmet popcorn. And once you start, don't be surprised if \"just one handful\" turns into finishing the whole bag.</p>\n              <h2>The Bottom Line</h2>\n              <p class=\"flavor-finale\"><strong>Crunchy Popcorn + Bold Bacon Flavor = SERIOUS SNACK SATISFACTION.</strong></p>\n              <p class=\"flavor-rhythm\">Pop it. Snack it. Crave it. Repeat.</p>\n              <p class=\"flavor-finale\"><strong>Bacon Popcorn — It's Not Just Butter &amp; Salt!</strong></p>\n            </section>",
+      "description": null,
+      "photo": "/img-f7a0352a7782744e.webp",
+      "image": "/img-f7a0352a7782744e.webp",
+      "gallery_images": [
+        {
+          "src": "/img-f7a0352a7782744e.webp",
+          "alt": "Bacon gourmet popcorn",
+          "fit": "cover"
+        },
+        {
+          "src": "/img-612e9aa0322013b6.webp",
+          "alt": "Bacon Popcorn nutrition facts and ingredient label",
+          "fit": "contain"
+        }
+      ],
+      "galleryImages": [
+        {
+          "src": "/img-f7a0352a7782744e.webp",
+          "alt": "Bacon gourmet popcorn",
+          "fit": "cover"
+        },
+        {
+          "src": "/img-612e9aa0322013b6.webp",
+          "alt": "Bacon Popcorn nutrition facts and ingredient label",
+          "fit": "contain"
+        }
+      ],
+      "colors": [
+        "#e65b4d",
+        "#f5aa77"
+      ],
+      "upc_a": "602581038092",
+      "gtin_14": "00602581038092",
+      "gs1_digital_link": "https://pop-a-licious.com/01/00602581038092",
+      "qr_image": "/qr/bacon.png",
+      "qr_status": "label-read",
+      "upc_source": "label-images/Bacon-1.png",
+      "status": "live",
+      "schema_version": 1
+    },
+    {
+      "name": "Banana Pudding",
+      "site_name": "Banana Pudding",
+      "gs1_name": "Banana Pudding",
+      "slug": "banana-pudding",
+      "category": "sweet",
+      "price_usd": 8,
+      "short_description": "",
+      "long_description": "<section class=\"flavor-description\" aria-labelledby=\"bananaWhyTitle\">\n              <p class=\"flavor-tagline\">Classic Banana Pudding. Crunchy Popcorn. One Seriously Delicious Twist. 🍌🍿</p>\n              <p>Take a beloved classic dessert and turn it into an irresistible popcorn experience! Banana Pudding Popcorn combines crunchy gourmet popcorn with creamy white chocolate, rich banana cream pudding mix, and pieces of vanilla wafers for a sweet, creamy, crunchy treat inspired by classic banana pudding.</p>\n              <p>Every handful delivers layers of dessert-inspired flavor—the smooth sweetness of white chocolate, creamy banana flavor, and the familiar crunch of vanilla wafers. It's nostalgic, indulgent, and completely Pop-A-Licious.</p>\n              <h2 id=\"bananaWhyTitle\">Why You'll Love It</h2>\n              <ul class=\"flavor-highlights\">\n                <li>🍿 <strong>Gourmet Popcorn</strong> – Light, crunchy popcorn that creates the perfect base for this decadent flavor.</li>\n                <li>🤍 <strong>White Chocolate</strong> – Smooth and creamy sweetness that brings the dessert experience to life.</li>\n                <li>🍌 <strong>Banana Cream Pudding</strong> – Rich banana flavor inspired by classic homemade banana pudding.</li>\n                <li>🍪 <strong>Vanilla Wafers</strong> – Crunchy pieces of vanilla wafers add the perfect finishing touch.</li>\n              </ul>\n              <h2>Your Favorite Dessert Just Got Popcorn'd</h2>\n              <p>If you love banana pudding, you're going to want to get your hands on this bag. Banana Pudding Popcorn takes everything you love about the classic dessert and transforms it into a fun, crunchy snack that's perfect for movie nights, parties, gifting, or satisfying that sweet tooth.</p>\n              <p class=\"flavor-rhythm\">Creamy. Crunchy. Sweet. Banana-licious.</p>\n              <h2>The Bottom Line</h2>\n              <p class=\"flavor-finale\"><strong>White Chocolate + Banana Cream + Vanilla Wafers + Gourmet Popcorn = DESSERT IN EVERY HANDFUL.</strong></p>\n              <p>Grab a bag. Take a bite. Fall in love with banana pudding all over again.</p>\n              <p class=\"flavor-finale\"><strong>Banana Pudding Popcorn — It's Not Just Butter &amp; Salt!</strong></p>\n            </section>",
+      "description": null,
+      "photo": "/img-3ce629b18a27553f.webp",
+      "image": "/img-3ce629b18a27553f.webp",
+      "gallery_images": [
+        {
+          "src": "/img-3ce629b18a27553f.webp",
+          "alt": "Banana Pudding gourmet popcorn",
+          "fit": "cover"
+        },
+        {
+          "src": "/img-68146c572d391d10.webp",
+          "alt": "Banana Pudding Popcorn nutrition facts and ingredient label",
+          "fit": "contain"
+        }
+      ],
+      "galleryImages": [
+        {
+          "src": "/img-3ce629b18a27553f.webp",
+          "alt": "Banana Pudding gourmet popcorn",
+          "fit": "cover"
+        },
+        {
+          "src": "/img-68146c572d391d10.webp",
+          "alt": "Banana Pudding Popcorn nutrition facts and ingredient label",
+          "fit": "contain"
+        }
+      ],
+      "colors": [
+        "#f4d953",
+        "#fff0ae"
+      ],
+      "upc_a": "669423097006",
+      "gtin_14": "00669423097006",
+      "gs1_digital_link": "https://pop-a-licious.com/01/00669423097006",
+      "qr_image": "/qr/banana-pudding.png",
+      "qr_status": "label-read",
+      "upc_source": "label-images/Banana_Pudding-1.png",
+      "status": "live",
+      "schema_version": 1
+    },
+    {
+      "name": "Birthday Cake",
+      "site_name": "Birthday Cake",
+      "gs1_name": "Birthday Cake",
+      "slug": "birthday-cake",
+      "category": "sweet",
+      "price_usd": 8,
+      "short_description": "",
+      "long_description": "<section class=\"flavor-description\" aria-labelledby=\"birthdayWhyTitle\">\n              <p class=\"flavor-tagline\">Every Bite Tastes Like a Celebration! 🎂🍿🌈</p>\n              <p>Why wait for your birthday to have cake? Birthday Cake Popcorn turns everyone's favorite celebration dessert into an irresistible gourmet snack! Crunchy popcorn is coated with creamy white chocolate, blended with sweet Funfetti cake flavor, and finished with colorful rainbow sprinkles for a festive treat that's as fun to look at as it is to eat.</p>\n              <p>Every handful delivers the delicious taste of birthday cake with the satisfying crunch of gourmet popcorn. It's sweet, creamy, colorful, and guaranteed to put a little celebration into snack time.</p>\n              <h2 id=\"birthdayWhyTitle\">Why You'll Love It</h2>\n              <ul class=\"flavor-highlights\">\n                <li>🍿 <strong>Gourmet Popcorn</strong> – Light, crunchy popcorn that's the perfect canvas for birthday-cake flavor.</li>\n                <li>🤍 <strong>White Chocolate</strong> – Smooth, creamy sweetness that makes every bite feel indulgent.</li>\n                <li>🎂 <strong>Funfetti Cake</strong> – Classic birthday-cake flavor packed into every delicious handful.</li>\n                <li>🌈 <strong>Rainbow Sprinkles</strong> – Colorful sprinkles add a festive finishing touch and plenty of fun.</li>\n              </ul>\n              <h2>Let the Celebration Begin</h2>\n              <p>Birthday Cake Popcorn is made for birthdays, parties, movie nights, celebrations, gifts, or simply turning an ordinary Tuesday into something worth celebrating.</p>\n              <p>No candles required. No birthday required. Just grab a bag and let the good times roll.</p>\n              <p class=\"flavor-rhythm\">Sweet. Creamy. Crunchy. Colorful. Celebration-ready.</p>\n              <h2>The Bottom Line</h2>\n              <p class=\"flavor-finale\"><strong>White Chocolate + Funfetti Cake + Rainbow Sprinkles + Gourmet Popcorn = BIRTHDAY MAGIC IN EVERY BITE.</strong></p>\n              <p>Open the bag. Make a wish. Grab a handful.</p>\n              <p class=\"flavor-finale\"><strong>Birthday Cake Popcorn — It's Not Just Butter &amp; Salt!</strong></p>\n            </section>",
+      "description": null,
+      "photo": "/img-a0ad95109f065ac2.webp",
+      "image": "/img-a0ad95109f065ac2.webp",
+      "gallery_images": [
+        {
+          "src": "/img-a0ad95109f065ac2.webp",
+          "alt": "Birthday Cake gourmet popcorn",
+          "fit": "cover"
+        },
+        {
+          "src": "/img-30c176c29e457541.webp",
+          "alt": "Birthday Cake Popcorn nutrition facts and ingredient label",
+          "fit": "contain"
+        }
+      ],
+      "galleryImages": [
+        {
+          "src": "/img-a0ad95109f065ac2.webp",
+          "alt": "Birthday Cake gourmet popcorn",
+          "fit": "cover"
+        },
+        {
+          "src": "/img-30c176c29e457541.webp",
+          "alt": "Birthday Cake Popcorn nutrition facts and ingredient label",
+          "fit": "contain"
+        }
+      ],
+      "colors": [
+        "#ef78a8",
+        "#6fd5ce"
+      ],
+      "upc_a": "794969412447",
+      "gtin_14": "00794969412447",
+      "gs1_digital_link": "https://pop-a-licious.com/01/00794969412447",
+      "qr_image": "/qr/birthday-cake.png",
+      "qr_status": "label-read",
+      "upc_source": "label-images/Birthday_Cake-1.png",
+      "status": "live",
+      "schema_version": 1
+    },
+    {
+      "name": "Buffalo Ranch",
+      "site_name": "Buffalo Ranch",
+      "gs1_name": "Buffalo Ranch",
+      "slug": "buffalo-ranch",
+      "category": "savory",
+      "price_usd": 8,
+      "short_description": "",
+      "long_description": "<section class=\"flavor-description\" aria-labelledby=\"buffaloWhyTitle\">\n              <p class=\"flavor-tagline\">Bold Buffalo Heat. Cool Ranch Flavor. Totally Vegan. 🌶️🍿🌱</p>\n              <p>Get ready for a flavor combination that brings the heat! Buffalo Ranch Popcorn takes crunchy gourmet popcorn and coats it with zesty ranch seasoning and bold buffalo powder for the perfect balance of tangy, savory ranch flavor and craveable buffalo kick.</p>\n              <p>Every handful starts with that delicious crunch, followed by creamy-style ranch flavor and a punch of buffalo seasoning. It's bold enough for spice lovers, snackable enough to keep reaching back into the bag, and completely vegan.</p>\n              <h2 id=\"buffaloWhyTitle\">Why You'll Love It</h2>\n              <ul class=\"flavor-highlights\">\n                <li>🍿 <strong>Gourmet Popcorn</strong> – Light, crunchy popcorn that's built to hold onto every bit of delicious seasoning.</li>\n                <li>🌶️ <strong>Buffalo Powder</strong> – Bold, tangy buffalo flavor with a satisfying kick.</li>\n                <li>🥬 <strong>Ranch Seasoning</strong> – Zesty, savory ranch flavor that perfectly balances the buffalo.</li>\n                <li>🌱 <strong>Vegan</strong> – Big flavor without animal-derived ingredients.</li>\n              </ul>\n              <h2>Bring the Heat to Snack Time</h2>\n              <p>Whether you're watching the big game, hosting friends, packing a road-trip snack, or simply craving something with a little attitude, Buffalo Ranch Popcorn brings serious flavor to every handful.</p>\n              <p>It's the kind of snack that hits that sweet spot between zesty ranch and bold buffalo, making it dangerously easy to keep grabbing \"just one more handful.\"</p>\n              <p class=\"flavor-rhythm\">Tangy. Savory. Spicy. Crunchy. Vegan.</p>\n              <h2>The Bottom Line</h2>\n              <p class=\"flavor-finale\"><strong>Buffalo Powder + Ranch Seasoning + Gourmet Popcorn = BOLD SNACKING WITH A KICK.</strong></p>\n              <p>Grab a bag. Bring the heat. Ranch it up.</p>\n              <p class=\"flavor-finale\"><strong>Buffalo Ranch Popcorn — It's Not Just Butter &amp; Salt!</strong></p>\n            </section>",
+      "description": null,
+      "photo": "/img-ea19f9ada0193563.webp",
+      "image": "/img-ea19f9ada0193563.webp",
+      "gallery_images": [
+        {
+          "src": "/img-ea19f9ada0193563.webp",
+          "alt": "Buffalo Ranch gourmet popcorn",
+          "fit": "cover"
+        },
+        {
+          "src": "/img-d8b10dd763392e1b.webp",
+          "alt": "Buffalo Ranch Popcorn nutrition facts and ingredient label",
+          "fit": "contain"
+        }
+      ],
+      "galleryImages": [
+        {
+          "src": "/img-ea19f9ada0193563.webp",
+          "alt": "Buffalo Ranch gourmet popcorn",
+          "fit": "cover"
+        },
+        {
+          "src": "/img-d8b10dd763392e1b.webp",
+          "alt": "Buffalo Ranch Popcorn nutrition facts and ingredient label",
+          "fit": "contain"
+        }
+      ],
+      "colors": [
+        "#ef6537",
+        "#f5e3bd"
+      ],
+      "upc_a": "766429062714",
+      "gtin_14": "00766429062714",
+      "gs1_digital_link": "https://pop-a-licious.com/01/00766429062714",
+      "qr_image": "/qr/buffalo-ranch.png",
+      "qr_status": "label-read",
+      "upc_source": "label-images/Buffalo_Ranch-1.png",
+      "status": "live",
+      "schema_version": 1
+    },
+    {
+      "name": "Caramel",
+      "site_name": "Caramel",
+      "gs1_name": "Caramel",
+      "slug": "caramel",
+      "category": "sweet",
+      "price_usd": 8,
+      "short_description": "",
+      "long_description": "<section class=\"flavor-description\" aria-labelledby=\"caramelWhyTitle\">\n              <p class=\"flavor-tagline\">Golden Caramel. Crunchy Popcorn. Pure Snacking Happiness. 🍿🍯</p>\n              <p>There's a reason caramel popcorn is a classic. Caramel Popcorn combines crunchy gourmet popcorn with rich, buttery caramel for a perfectly sweet, satisfying snack that keeps you coming back for more.</p>\n              <p>Every handful delivers that delicious combination of crunchy popcorn and smooth caramel sweetness. It's nostalgic, indulgent, and just the right amount of irresistible.</p>\n              <h2 id=\"caramelWhyTitle\">Why You'll Love It</h2>\n              <ul class=\"flavor-highlights\">\n                <li>🍿 <strong>Gourmet Popcorn</strong> – Light, crunchy popcorn that provides the perfect foundation for delicious caramel.</li>\n                <li>🍯 <strong>Rich Caramel Flavor</strong> – Sweet, buttery caramel flavor wraps every bite in classic goodness.</li>\n                <li>✨ <strong>Perfectly Sweet</strong> – A satisfying balance of popcorn crunch and caramel indulgence.</li>\n                <li>😋 <strong>Seriously Snackable</strong> – Perfect for movie nights, parties, gifting, road trips, or whenever your sweet tooth calls.</li>\n              </ul>\n              <h2>A Classic for a Reason</h2>\n              <p>Sometimes you don't need to reinvent the wheel—you just need to make it Pop-A-Licious.</p>\n              <p>Whether you're sharing a bowl with friends or keeping the bag all to yourself, Caramel Popcorn delivers the timeless flavor that popcorn lovers have been craving for generations.</p>\n              <p class=\"flavor-rhythm\">Sweet. Buttery. Crunchy. Classic.</p>\n              <h2>The Bottom Line</h2>\n              <p class=\"flavor-finale\"><strong>Gourmet Popcorn + Rich Caramel = CLASSIC CRUNCHY GOODNESS.</strong></p>\n              <p>Open the bag. Grab a handful. Enjoy the classic.</p>\n              <p class=\"flavor-finale\"><strong>Caramel Popcorn — It's Not Just Butter &amp; Salt!</strong></p>\n            </section>",
+      "description": null,
+      "photo": "/img-9239d90c4a0c3810.webp",
+      "image": "/img-9239d90c4a0c3810.webp",
+      "gallery_images": [
+        {
+          "src": "/img-9239d90c4a0c3810.webp",
+          "alt": "Caramel gourmet popcorn",
+          "fit": "cover"
+        },
+        {
+          "src": "/img-9b149d61119f5e0d.webp",
+          "alt": "Caramel Popcorn nutrition facts and ingredient label",
+          "fit": "contain"
+        }
+      ],
+      "galleryImages": [
+        {
+          "src": "/img-9239d90c4a0c3810.webp",
+          "alt": "Caramel gourmet popcorn",
+          "fit": "cover"
+        },
+        {
+          "src": "/img-9b149d61119f5e0d.webp",
+          "alt": "Caramel Popcorn nutrition facts and ingredient label",
+          "fit": "contain"
+        }
+      ],
+      "colors": [
+        "#bd681d",
+        "#f5bc52"
+      ],
+      "upc_a": "602581038177",
+      "gtin_14": "00602581038177",
+      "gs1_digital_link": "https://pop-a-licious.com/01/00602581038177",
+      "qr_image": "/qr/caramel.png",
+      "qr_status": "label-read",
+      "upc_source": "label-images/Caramel-1.png",
+      "status": "live",
+      "schema_version": 1
+    },
+    {
+      "name": "Cheddar",
+      "site_name": "Cheddar",
+      "gs1_name": "Cheddar",
+      "slug": "cheddar",
+      "category": "cheesy",
+      "price_usd": 8,
+      "short_description": "",
+      "long_description": "<section class=\"flavor-description\" aria-labelledby=\"cheddarWhyTitle\">\n              <p class=\"flavor-tagline\">Liquid Gold. Gourmet Popcorn. Maximum Cheese. 🧀🍿</p>\n              <p>This isn't your ordinary cheese popcorn. Cheddar Popcorn starts with crunchy gourmet popcorn and gets coated in our rich, creamy Liquid Gold cheese sauce, delivering bold cheddar flavor and cheesy goodness in every bite.</p>\n              <p>Every handful brings together crunchy popcorn and smooth, savory cheese sauce for a deliciously indulgent snack. It's rich, cheesy, satisfying, and made for anyone who believes there's no such thing as too much cheese.</p>\n              <h2 id=\"cheddarWhyTitle\">Why You'll Love It</h2>\n              <ul class=\"flavor-highlights\">\n                <li>🍿 <strong>Gourmet Popcorn</strong> – Light, crunchy popcorn that's the perfect canvas for our signature cheese sauce.</li>\n                <li>🧀 <strong>Liquid Gold Cheese Sauce</strong> – Rich, creamy cheese sauce coats the popcorn for a bold cheddar experience.</li>\n                <li>✨ <strong>Maximum Cheese Flavor</strong> – Every bite is packed with savory, cheesy goodness.</li>\n                <li>😋 <strong>Seriously Snackable</strong> – Perfect for movie nights, game days, parties, events, or whenever the cheese craving hits.</li>\n              </ul>\n              <h2>Say Hello to Liquid Gold</h2>\n              <p>Why settle for ordinary popcorn when you can pour on the cheese?</p>\n              <p>Our Liquid Gold cheese sauce transforms crunchy popcorn into a seriously craveable cheesy snack. It's the perfect combination of crunchy, creamy, savory, and cheesy—and it's guaranteed to make snack time more exciting.</p>\n              <p class=\"flavor-rhythm\">Crunchy. Creamy. Cheesy. Golden.</p>\n              <h2>The Bottom Line</h2>\n              <p class=\"flavor-finale\"><strong>Gourmet Popcorn + Liquid Gold Cheese Sauce = CHEESE LOVERS' DREAM SNACK.</strong></p>\n              <p>Grab a bag. Get cheesy. Follow the gold.</p>\n              <p class=\"flavor-finale\"><strong>Cheddar Popcorn — It's Not Just Butter &amp; Salt!</strong></p>\n            </section>",
+      "description": null,
+      "photo": "/img-6d9fdf9912c855f7.webp",
+      "image": "/img-6d9fdf9912c855f7.webp",
+      "gallery_images": [
+        {
+          "src": "/img-6d9fdf9912c855f7.webp",
+          "alt": "Cheddar gourmet popcorn",
+          "fit": "cover"
+        },
+        {
+          "src": "/img-cec4ca4203df3aa4.webp",
+          "alt": "Cheddar Popcorn nutrition facts and ingredient label",
+          "fit": "contain"
+        }
+      ],
+      "galleryImages": [
+        {
+          "src": "/img-6d9fdf9912c855f7.webp",
+          "alt": "Cheddar gourmet popcorn",
+          "fit": "cover"
+        },
+        {
+          "src": "/img-cec4ca4203df3aa4.webp",
+          "alt": "Cheddar Popcorn nutrition facts and ingredient label",
+          "fit": "contain"
+        }
+      ],
+      "colors": [
+        "#f09b22",
+        "#ffe060"
+      ],
+      "upc_a": "794969412454",
+      "gtin_14": "00794969412454",
+      "gs1_digital_link": "https://pop-a-licious.com/01/00794969412454",
+      "qr_image": "/qr/cheddar.png",
+      "qr_status": "label-read",
+      "upc_source": "label-images/cheddar-1.png",
+      "status": "live",
+      "schema_version": 1
+    },
+    {
+      "name": "Cheddar Jalapeño",
+      "site_name": "Cheddar Jalapeño",
+      "gs1_name": "Cheddar Jalapeño",
+      "slug": "cheddar-jalapeno",
+      "category": "cheesy",
+      "price_usd": 8,
+      "short_description": "",
+      "long_description": "<section class=\"flavor-description\" aria-labelledby=\"jalapenoWhyTitle\">\n              <p class=\"flavor-tagline\">Liquid Gold Meets Jalapeño Heat. 🧀🌶️🍿</p>\n              <p>Get ready for a cheesy snack with a little attitude! Cheddar Jalapeño Popcorn starts with crunchy gourmet popcorn and gets coated in our rich, creamy Liquid Gold cheese sauce, then finished with bold jalapeño seasoning for a delicious kick of heat.</p>\n              <p>Every handful delivers the perfect combination of creamy cheddar flavor, satisfying popcorn crunch, and zesty jalapeño heat. It's cheesy, savory, spicy, and seriously hard to put down.</p>\n              <h2 id=\"jalapenoWhyTitle\">Why You'll Love It</h2>\n              <ul class=\"flavor-highlights\">\n                <li>🍿 <strong>Gourmet Popcorn</strong> – Light, crunchy popcorn that provides the perfect base for all that cheesy, spicy goodness.</li>\n                <li>🧀 <strong>Liquid Gold Cheese Sauce</strong> – Rich, creamy cheese sauce delivers bold cheddar flavor in every bite.</li>\n                <li>🌶️ <strong>Jalapeño Seasoning</strong> – Adds a zesty pepper kick that takes classic cheddar popcorn to the next level.</li>\n                <li>🔥 <strong>Cheesy With a Kick</strong> – The perfect balance of rich cheese and craveable jalapeño flavor.</li>\n              </ul>\n              <h2>Turn Up the Cheese. Bring the Heat.</h2>\n              <p>Classic cheddar popcorn is delicious. Cheddar Jalapeño Popcorn takes it somewhere more exciting.</p>\n              <p>The creamy richness of Liquid Gold cheese sauce meets the bright, spicy flavor of jalapeño seasoning, creating a snack that's perfect for movie nights, game days, parties, road trips, or whenever you're craving something with a little heat.</p>\n              <p class=\"flavor-rhythm\">Cheesy. Creamy. Spicy. Crunchy.</p>\n              <h2>The Bottom Line</h2>\n              <p class=\"flavor-finale\"><strong>Liquid Gold Cheese Sauce + Jalapeño Seasoning + Gourmet Popcorn = CHEESY HEAT IN EVERY HANDFUL.</strong></p>\n              <p>Grab a bag. Get cheesy. Bring the heat.</p>\n              <p class=\"flavor-finale\"><strong>Cheddar Jalapeño Popcorn — It's Not Just Butter &amp; Salt!</strong></p>\n            </section>",
+      "description": null,
+      "photo": "/img-8639c3a264a3f8ed.webp",
+      "image": "/img-8639c3a264a3f8ed.webp",
+      "gallery_images": [
+        {
+          "src": "/img-8639c3a264a3f8ed.webp",
+          "alt": "Cheddar Jalapeño gourmet popcorn",
+          "fit": "cover"
+        },
+        {
+          "src": "/img-15252f54eefd6e74.webp",
+          "alt": "Cheddar Jalapeño Popcorn nutrition facts and ingredient label",
+          "fit": "contain"
+        }
+      ],
+      "galleryImages": [
+        {
+          "src": "/img-8639c3a264a3f8ed.webp",
+          "alt": "Cheddar Jalapeño gourmet popcorn",
+          "fit": "cover"
+        },
+        {
+          "src": "/img-15252f54eefd6e74.webp",
+          "alt": "Cheddar Jalapeño Popcorn nutrition facts and ingredient label",
+          "fit": "contain"
+        }
+      ],
+      "colors": [
+        "#6d9e36",
+        "#efaa29"
+      ],
+      "upc_a": "794969412461",
+      "gtin_14": "00794969412461",
+      "gs1_digital_link": "https://pop-a-licious.com/01/00794969412461",
+      "qr_image": "/qr/cheddar-jalapeno.png",
+      "qr_status": "label-read",
+      "upc_source": "label-images/Cheddar_Jalapeno_Final-1.png",
+      "status": "live",
+      "schema_version": 1
+    },
+    {
+      "name": "Cheeseburger",
+      "site_name": "Cheeseburger",
+      "gs1_name": "Cheeseburger",
+      "slug": "cheeseburger",
+      "category": "cheesy",
+      "price_usd": 8,
+      "short_description": "",
+      "long_description": "<section class=\"flavor-description\" aria-labelledby=\"cheeseburgerWhyTitle\">\n              <p class=\"flavor-tagline\">All the Cheeseburger Flavor. None of the Bun Required. 🍔🍿</p>\n              <p>Get ready for a cheeseburger experience unlike anything you've popped before! Cheeseburger Popcorn takes crunchy gourmet popcorn and coats it with savory cheeseburger seasoning for a bold, mouthwatering flavor inspired by one of America's favorite comfort foods.</p>\n              <p>Every handful delivers layers of savory, cheesy, burger-inspired flavor with the satisfying crunch of gourmet popcorn. And here's the twist: it's vegetarian!</p>\n              <h2 id=\"cheeseburgerWhyTitle\">Why You'll Love It</h2>\n              <ul class=\"flavor-highlights\">\n                <li>🍿 <strong>Gourmet Popcorn</strong> – Light, crunchy popcorn that makes the perfect base for bold cheeseburger flavor.</li>\n                <li>🍔 <strong>Cheeseburger Seasoning</strong> – Savory, cheesy, craveable flavor inspired by the classic cheeseburger.</li>\n                <li>🌱 <strong>Vegetarian</strong> – All the cheeseburger-inspired flavor without meat.</li>\n                <li>😋 <strong>Seriously Snackable</strong> – Perfect for movie nights, game days, parties, road trips, or anytime you want to satisfy a burger craving.</li>\n              </ul>\n              <h2>Your Burger Craving Just Got Popped</h2>\n              <p>Why wait for the grill when you can grab a bag?</p>\n              <p>Cheeseburger Popcorn takes the familiar flavors of a classic cheeseburger and gives them a crunchy, snackable twist. It's bold, savory, cheesy, and totally unexpected.</p>\n              <p>Perfect for burger lovers, adventurous snackers, parties, or anyone looking to try something completely different.</p>\n              <p class=\"flavor-rhythm\">Savory. Cheesy. Crunchy. Unexpected.</p>\n              <h2>The Bottom Line</h2>\n              <p class=\"flavor-finale\"><strong>Cheeseburger Seasoning + Gourmet Popcorn = A BURGER CRAVING IN EVERY HANDFUL.</strong></p>\n              <p>No bun. No grill. No problem. Just grab, crunch, and enjoy.</p>\n              <p class=\"flavor-finale\"><strong>Cheeseburger Popcorn — It's Not Just Butter &amp; Salt!</strong></p>\n            </section>",
+      "description": null,
+      "photo": "/img-7da3363efe82194a.webp",
+      "image": "/img-7da3363efe82194a.webp",
+      "gallery_images": [
+        {
+          "src": "/img-7da3363efe82194a.webp",
+          "alt": "Cheeseburger gourmet popcorn",
+          "fit": "cover"
+        },
+        {
+          "src": "/img-0d96503f23edb786.webp",
+          "alt": "Cheeseburger Popcorn nutrition facts and ingredient label",
+          "fit": "contain"
+        }
+      ],
+      "galleryImages": [
+        {
+          "src": "/img-7da3363efe82194a.webp",
+          "alt": "Cheeseburger gourmet popcorn",
+          "fit": "cover"
+        },
+        {
+          "src": "/img-0d96503f23edb786.webp",
+          "alt": "Cheeseburger Popcorn nutrition facts and ingredient label",
+          "fit": "contain"
+        }
+      ],
+      "colors": [
+        "#df4c32",
+        "#f2c84c"
+      ],
+      "upc_a": "602581038184",
+      "gtin_14": "00602581038184",
+      "gs1_digital_link": "https://pop-a-licious.com/01/00602581038184",
+      "qr_image": "/qr/cheeseburger.png",
+      "qr_status": "label-read",
+      "upc_source": "label file replaced Oct 26 (barcode 602581038184)",
+      "status": "live",
+      "schema_version": 1
+    },
+    {
+      "name": "Churro",
+      "site_name": "Churro",
+      "gs1_name": "Churro",
+      "slug": "churro",
+      "category": "sweet",
+      "price_usd": 8,
+      "short_description": "",
+      "long_description": "<section class=\"flavor-description\" aria-labelledby=\"churroWhyTitle\">\n              <p class=\"flavor-tagline\">Cinnamon. Sugar. Churro Goodness. All in One Crunchy Bite. 🍿✨</p>\n              <p>Get ready to experience the irresistible flavor of a classic churro in a whole new way! Churro Popcorn combines crunchy gourmet popcorn with delicious churro seasoning and a generous coating of sweet cinnamon sugar for a snack that's warm, sweet, and seriously craveable.</p>\n              <p>Every handful delivers that familiar combination of cinnamon, sugar, and delicious churro flavor with the satisfying crunch of gourmet popcorn. It's like your favorite fairground or bakery treat got popcorn'd!</p>\n              <h2 id=\"churroWhyTitle\">Why You'll Love It</h2>\n              <ul class=\"flavor-highlights\">\n                <li>🍿 <strong>Gourmet Popcorn</strong> – Light, crunchy popcorn that makes the perfect base for sweet churro flavor.</li>\n                <li>✨ <strong>Churro Seasoning</strong> – Brings the warm, comforting flavor of a freshly made churro to every bite.</li>\n                <li>🤎 <strong>Cinnamon Sugar</strong> – A sweet, cinnamon-packed finish that makes every handful extra delicious.</li>\n                <li>😋 <strong>Seriously Snackable</strong> – Perfect for movie nights, parties, gifting, road trips, or satisfying your sweet tooth.</li>\n              </ul>\n              <h2>Churro Cravings? Consider Them Handled.</h2>\n              <p>Why wait for the fair, carnival, or your favorite dessert spot?</p>\n              <p>Churro Popcorn delivers that classic cinnamon-sugar churro experience in a crunchy, snackable form that's perfect anytime. Sweet enough for dessert, crunchy enough for snacking, and delicious enough to keep you reaching back into the bag.</p>\n              <p class=\"flavor-rhythm\">Sweet. Cinnamon-y. Crunchy. Churro-licious.</p>\n              <h2>The Bottom Line</h2>\n              <p class=\"flavor-finale\"><strong>Churro Seasoning + Cinnamon Sugar + Gourmet Popcorn = CHURRO MAGIC IN EVERY HANDFUL.</strong></p>\n              <p>Grab a bag. Shake on the sweetness. Let the churro cravings begin.</p>\n              <p class=\"flavor-finale\"><strong>Churro Popcorn — It's Not Just Butter &amp; Salt!</strong></p>\n            </section>",
+      "description": null,
+      "photo": "/img-e128dad09769bf67.webp",
+      "image": "/img-e128dad09769bf67.webp",
+      "gallery_images": [
+        {
+          "src": "/img-e128dad09769bf67.webp",
+          "alt": "Churro gourmet popcorn",
+          "fit": "cover"
+        },
+        {
+          "src": "/img-88cdc1cdbe4e391f.webp",
+          "alt": "Churro Popcorn nutrition facts and ingredient label",
+          "fit": "contain"
+        }
+      ],
+      "galleryImages": [
+        {
+          "src": "/img-e128dad09769bf67.webp",
+          "alt": "Churro gourmet popcorn",
+          "fit": "cover"
+        },
+        {
+          "src": "/img-88cdc1cdbe4e391f.webp",
+          "alt": "Churro Popcorn nutrition facts and ingredient label",
+          "fit": "contain"
+        }
+      ],
+      "colors": [
+        "#c27c42",
+        "#f1d2a2"
+      ],
+      "upc_a": "602581038245",
+      "gtin_14": "00602581038245",
+      "gs1_digital_link": "https://pop-a-licious.com/01/00602581038245",
+      "qr_image": "/qr/churro.png",
+      "qr_status": "label-read",
+      "upc_source": "label-images/Churro-1.png",
+      "status": "live",
+      "schema_version": 1
+    },
+    {
+      "name": "Cinnamon Roll",
+      "site_name": "Cinnamon Roll",
+      "gs1_name": "Cinnamon Roll",
+      "slug": "cinnamon-roll",
+      "category": "sweet",
+      "price_usd": 8,
+      "short_description": "",
+      "long_description": "<section class=\"flavor-description\" aria-labelledby=\"cinnamonRollWhyTitle\">\n              <p class=\"flavor-tagline\">Warm Cinnamon Roll Flavor. Sweet Frosting. Popcorn Perfection. 🍿🤎</p>\n              <p>Imagine your favorite freshly baked cinnamon roll—but instead of a plate, it's in a bag of crunchy gourmet popcorn! Cinnamon Roll Popcorn combines light, crunchy popcorn with delicious cinnamon roll frosting for a sweet, bakery-inspired treat that's seriously hard to resist.</p>\n              <p>Every handful delivers the satisfying crunch of gourmet popcorn paired with rich, sweet frosting flavor reminiscent of the icing drizzled over a freshly baked cinnamon roll.</p>\n              <h2 id=\"cinnamonRollWhyTitle\">Why You'll Love It</h2>\n              <ul class=\"flavor-highlights\">\n                <li>🍿 <strong>Gourmet Popcorn</strong> – Light, crunchy popcorn that's the perfect base for this decadent dessert-inspired flavor.</li>\n                <li>🤍 <strong>Cinnamon Roll Frosting</strong> – Sweet, creamy frosting flavor brings that irresistible cinnamon-roll icing experience to every bite.</li>\n                <li>🥐 <strong>Bakery-Inspired Flavor</strong> – A nostalgic twist inspired by the classic cinnamon roll you know and love.</li>\n                <li>😋 <strong>Seriously Snackable</strong> – Perfect for movie nights, breakfast cravings, parties, gifting, or whenever your sweet tooth strikes.</li>\n              </ul>\n              <h2>Your Cinnamon Roll Craving Just Got Popped</h2>\n              <p>Why wait for the bakery?</p>\n              <p>Cinnamon Roll Popcorn transforms a classic breakfast favorite into an anytime snack. It's sweet, indulgent, crunchy, and packed with the comforting flavor of cinnamon-roll frosting.</p>\n              <p>Perfect alongside your morning coffee, as an afternoon treat, or as a sweet addition to movie night.</p>\n              <p class=\"flavor-rhythm\">Sweet. Creamy. Crunchy. Bakery-inspired.</p>\n              <h2>The Bottom Line</h2>\n              <p class=\"flavor-finale\"><strong>Gourmet Popcorn + Cinnamon Roll Frosting = A CINNAMON ROLL IN EVERY HANDFUL.</strong></p>\n              <p>Open the bag. Grab a handful. Let the frosting take over.</p>\n              <p class=\"flavor-finale\"><strong>Cinnamon Roll Popcorn — It's Not Just Butter &amp; Salt!</strong></p>\n            </section>",
+      "description": null,
+      "photo": "/img-0b6d3fc52fc69f59.webp",
+      "image": "/img-0b6d3fc52fc69f59.webp",
+      "gallery_images": [
+        {
+          "src": "/img-0b6d3fc52fc69f59.webp",
+          "alt": "Cinnamon Roll gourmet popcorn",
+          "fit": "cover"
+        },
+        {
+          "src": "/img-3552a26b694f1a7f.webp",
+          "alt": "Cinnamon Roll Popcorn nutrition facts and ingredient label",
+          "fit": "contain"
+        }
+      ],
+      "galleryImages": [
+        {
+          "src": "/img-0b6d3fc52fc69f59.webp",
+          "alt": "Cinnamon Roll gourmet popcorn",
+          "fit": "cover"
+        },
+        {
+          "src": "/img-3552a26b694f1a7f.webp",
+          "alt": "Cinnamon Roll Popcorn nutrition facts and ingredient label",
+          "fit": "contain"
+        }
+      ],
+      "colors": [
+        "#9c603d",
+        "#f2dfcb"
+      ],
+      "upc_a": "669423097044",
+      "gtin_14": "00669423097044",
+      "gs1_digital_link": "https://pop-a-licious.com/01/00669423097044",
+      "qr_image": "/qr/cinnamon-roll.png",
+      "qr_status": "label-read",
+      "upc_source": "label-images/Cinnamon_Roll-1.png",
+      "status": "live",
+      "schema_version": 1
+    },
+    {
+      "name": "Cookies N' Creme",
+      "site_name": "Cookies N' Creme",
+      "gs1_name": "Cookie and Cream",
+      "slug": "cookie-and-cream",
+      "category": "sweet",
+      "price_usd": 8,
+      "short_description": "",
+      "long_description": "<section class=\"flavor-description\" aria-labelledby=\"cookiesCremeWhyTitle\">\n              <p class=\"flavor-tagline\">Creamy White Chocolate. Chocolate Cookie Crunch. Pure Dessert Bliss. 🍪🍿🤍</p>\n              <p>Your favorite cookies-and-creme treat just got a whole lot crunchier! Cookies N' Creme Popcorn combines light, crunchy gourmet popcorn with creamy white chocolate, crushed chocolate sandwich cookies, and generous chunks of chocolate sandwich cookies throughout the bag.</p>\n              <p>Every handful delivers layers of irresistible texture and flavor—from smooth, creamy white chocolate to rich chocolate cookie crunch. And just when you think you've found all the cookie goodness, you might discover another delicious cookie chunk waiting for you!</p>\n              <h2 id=\"cookiesCremeWhyTitle\">Why You'll Love It</h2>\n              <ul class=\"flavor-highlights\">\n                <li>🍿 <strong>Gourmet Popcorn</strong> – Light, crunchy popcorn that creates the perfect base for this decadent dessert-inspired flavor.</li>\n                <li>🤍 <strong>White Chocolate</strong> – Smooth, creamy sweetness that brings the cookies-and-creme flavor together.</li>\n                <li>🍪 <strong>Crushed Chocolate Sandwich Cookies</strong> – Fine cookie pieces add rich chocolate flavor and delicious crunch throughout.</li>\n                <li>🍪 <strong>Chocolate Cookie Chunks</strong> – Bigger pieces of chocolate sandwich cookies deliver an extra-special bite of cookie goodness.</li>\n              </ul>\n              <h2>The Cookie Pieces Are Just Getting Started</h2>\n              <p>This isn't popcorn with a little cookie sprinkled on top.</p>\n              <p>Cookies N' Creme Popcorn is loaded with cookie goodness—from crushed chocolate sandwich cookies coating the popcorn to bigger chunks hiding throughout the bag.</p>\n              <p>It's the perfect combination of creamy, chocolatey, crunchy, and indulgent.</p>\n              <p>Perfect for movie nights, parties, gifting, sweet cravings, or anytime you want dessert without needing a fork.</p>\n              <p class=\"flavor-rhythm\">Creamy. Chocolatey. Crunchy. Cookie-loaded.</p>\n              <h2>The Bottom Line</h2>\n              <p class=\"flavor-finale\"><strong>White Chocolate + Crushed Chocolate Sandwich Cookies + Cookie Chunks + Gourmet Popcorn = COOKIE HEAVEN IN EVERY HANDFUL.</strong></p>\n              <p>Open the bag. Find the chunks. Enjoy the crunch.</p>\n              <p class=\"flavor-finale\"><strong>Cookies N' Creme Popcorn — It's Not Just Butter &amp; Salt!</strong></p>\n            </section>",
+      "description": null,
+      "photo": "/img-c6fce0cf2d1114f4.webp",
+      "image": "/img-c6fce0cf2d1114f4.webp",
+      "gallery_images": [
+        {
+          "src": "/img-c6fce0cf2d1114f4.webp",
+          "alt": "Cookies N' Creme gourmet popcorn",
+          "fit": "cover"
+        },
+        {
+          "src": "/img-d01b7c2d63a71b79.webp",
+          "alt": "Cookies N' Creme Popcorn nutrition facts and ingredient label",
+          "fit": "contain"
+        }
+      ],
+      "galleryImages": [
+        {
+          "src": "/img-c6fce0cf2d1114f4.webp",
+          "alt": "Cookies N' Creme gourmet popcorn",
+          "fit": "cover"
+        },
+        {
+          "src": "/img-d01b7c2d63a71b79.webp",
+          "alt": "Cookies N' Creme Popcorn nutrition facts and ingredient label",
+          "fit": "contain"
+        }
+      ],
+      "colors": [
+        "#3c3734",
+        "#e8e2d8"
+      ],
+      "upc_a": "766429062653",
+      "gtin_14": "00766429062653",
+      "gs1_digital_link": "https://pop-a-licious.com/01/00766429062653",
+      "qr_image": "/qr/cookie-and-cream.png",
+      "qr_status": "bag-verified",
+      "upc_source": "physical bag verified Oct 20 + label-images/Cookies_and_Cream-1.jpg",
+      "status": "live",
+      "schema_version": 1
+    },
+    {
+      "name": "Dill Pickle",
+      "site_name": "Dill Pickle",
+      "gs1_name": "Dill Pickle",
+      "slug": "dill-pickle",
+      "category": "savory",
+      "price_usd": 8,
+      "short_description": "",
+      "long_description": "<section class=\"flavor-description\" aria-labelledby=\"dillPickleWhyTitle\">\n              <p class=\"flavor-tagline\">Tangy. Zesty. Pickle-Packed. 🍿🥒</p>\n              <p>If you love pickles, get ready to meet your new favorite snack! Dill Pickle Popcorn takes crunchy gourmet popcorn and coats it with bold dill pickle seasoning for a mouthwatering combination of tangy, savory, salty flavor in every bite.</p>\n              <p>Every handful delivers that unmistakable dill pickle punch you crave, paired with the satisfying crunch of gourmet popcorn. It's bright, zesty, savory, and seriously snackable.</p>\n              <h2 id=\"dillPickleWhyTitle\">Why You'll Love It</h2>\n              <ul class=\"flavor-highlights\">\n                <li>🍿 <strong>Gourmet Popcorn</strong> – Light, crunchy popcorn that's the perfect canvas for bold pickle flavor.</li>\n                <li>🥒 <strong>Dill Pickle Seasoning</strong> – Zesty dill, tangy pickle flavor, and savory seasoning come together in every handful.</li>\n                <li>💥 <strong>Big Pickle Flavor</strong> – A bold, craveable punch for anyone who can't get enough of that classic pickle taste.</li>\n                <li>😋 <strong>Seriously Snackable</strong> – Perfect for movie nights, game days, parties, road trips, or whenever your pickle craving hits.</li>\n              </ul>\n              <h2>Pickle Lovers, This One's For You</h2>\n              <p>You know that moment when you open a jar of pickles and instantly start craving that tangy, salty goodness?</p>\n              <p>We put that feeling into popcorn.</p>\n              <p>Dill Pickle Popcorn delivers the bold flavor of your favorite dill pickle in a crunchy, grab-and-go snack. It's the perfect choice for pickle fanatics, adventurous snackers, and anyone who likes their popcorn with a little extra attitude.</p>\n              <p class=\"flavor-rhythm\">Tangy. Salty. Dill-y. Crunchy.</p>\n              <h2>The Bottom Line</h2>\n              <p class=\"flavor-finale\"><strong>Dill Pickle Seasoning + Gourmet Popcorn = BIG PICKLE FLAVOR IN EVERY HANDFUL.</strong></p>\n              <p>Grab a bag. Get your pickle fix. Keep crunching.</p>\n              <p class=\"flavor-finale\"><strong>Dill Pickle Popcorn — It's Not Just Butter &amp; Salt!</strong></p>\n            </section>",
+      "description": null,
+      "photo": "/img-4b2ca182e6c377dd.webp",
+      "image": "/img-4b2ca182e6c377dd.webp",
+      "gallery_images": [
+        {
+          "src": "/img-4b2ca182e6c377dd.webp",
+          "alt": "Dill Pickle gourmet popcorn",
+          "fit": "cover"
+        },
+        {
+          "src": "/img-446b01fc3287f577.webp",
+          "alt": "Dill Pickle Popcorn nutrition facts and ingredient label",
+          "fit": "contain"
+        }
+      ],
+      "galleryImages": [
+        {
+          "src": "/img-4b2ca182e6c377dd.webp",
+          "alt": "Dill Pickle gourmet popcorn",
+          "fit": "cover"
+        },
+        {
+          "src": "/img-446b01fc3287f577.webp",
+          "alt": "Dill Pickle Popcorn nutrition facts and ingredient label",
+          "fit": "contain"
+        }
+      ],
+      "colors": [
+        "#7fb44f",
+        "#dce86f"
+      ],
+      "upc_a": "669423097020",
+      "gtin_14": "00669423097020",
+      "gs1_digital_link": "https://pop-a-licious.com/01/00669423097020",
+      "qr_image": "/qr/dill-pickle.png",
+      "qr_status": "label-read",
+      "upc_source": "label-images/Dill_Pickle-1.png",
+      "status": "live",
+      "schema_version": 1
+    },
+    {
+      "name": "Garlic Butter",
+      "site_name": "Garlic Butter",
+      "gs1_name": "Garlic Butter",
+      "slug": "garlic-butter",
+      "category": "savory",
+      "price_usd": 8,
+      "short_description": "",
+      "long_description": "<section class=\"flavor-description\" aria-labelledby=\"garlicButterWhyTitle\">\n              <p class=\"flavor-tagline\">Buttery. Garlicky. Savory. Seriously Craveable. 🧄🧈🍿</p>\n              <p>Get ready for a flavor that makes every bite better! Garlic Butter Popcorn combines crunchy gourmet popcorn with delicious garlic butter seasoning for a rich, savory snack packed with classic buttery garlic flavor.</p>\n              <p>Every handful delivers the satisfying crunch of gourmet popcorn followed by the irresistible combination of buttery goodness and bold garlic flavor. It's comforting, savory, and dangerously easy to keep reaching for.</p>\n              <h2 id=\"garlicButterWhyTitle\">Why You'll Love It</h2>\n              <ul class=\"flavor-highlights\">\n                <li>🍿 <strong>Gourmet Popcorn</strong> – Light, crunchy popcorn that provides the perfect base for rich garlic butter flavor.</li>\n                <li>🧄 <strong>Garlic Butter Seasoning</strong> – Savory garlic and buttery flavor come together to create a seriously craveable coating.</li>\n                <li>🧈 <strong>Rich &amp; Savory</strong> – A comforting flavor combination that tastes delicious from the first bite to the last.</li>\n                <li>😋 <strong>Seriously Snackable</strong> – Perfect for movie nights, parties, game days, road trips, or whenever you're craving something savory.</li>\n              </ul>\n              <h2>Garlic Lovers, Get Ready</h2>\n              <p>Sometimes the simplest flavor combinations are the hardest to resist.</p>\n              <p>Garlic Butter Popcorn brings together two classic flavors—rich butter and bold garlic—and gives them a crunchy gourmet popcorn twist.</p>\n              <p>It's the perfect snack when you want something savory, buttery, garlicky, and satisfying.</p>\n              <p class=\"flavor-rhythm\">Buttery. Garlicky. Savory. Crunchy.</p>\n              <h2>The Bottom Line</h2>\n              <p class=\"flavor-finale\"><strong>Garlic Butter Seasoning + Gourmet Popcorn = BUTTERY GARLIC GOODNESS IN EVERY HANDFUL.</strong></p>\n              <p>Open the bag. Grab a handful. Let the garlic butter cravings begin.</p>\n              <p class=\"flavor-finale\"><strong>Garlic Butter Popcorn — It's Not Just Butter &amp; Salt!</strong></p>\n            </section>",
+      "description": null,
+      "photo": "/img-3d67520c9a5b09b1.webp",
+      "image": "/img-3d67520c9a5b09b1.webp",
+      "gallery_images": [
+        {
+          "src": "/img-3d67520c9a5b09b1.webp",
+          "alt": "Garlic Butter gourmet popcorn",
+          "fit": "cover"
+        },
+        {
+          "src": "/img-6be70d7cb03d9d74.webp",
+          "alt": "Garlic Butter Popcorn nutrition facts and ingredient label",
+          "fit": "contain"
+        }
+      ],
+      "galleryImages": [
+        {
+          "src": "/img-3d67520c9a5b09b1.webp",
+          "alt": "Garlic Butter gourmet popcorn",
+          "fit": "cover"
+        },
+        {
+          "src": "/img-6be70d7cb03d9d74.webp",
+          "alt": "Garlic Butter Popcorn nutrition facts and ingredient label",
+          "fit": "contain"
+        }
+      ],
+      "colors": [
+        "#e8c640",
+        "#86a34b"
+      ],
+      "upc_a": "766429062646",
+      "gtin_14": "00766429062646",
+      "gs1_digital_link": "https://pop-a-licious.com/01/00766429062646",
+      "qr_image": "/qr/garlic-butter.png",
+      "qr_status": "label-read",
+      "upc_source": "label-images/Garlic_Butter-1.png",
+      "status": "live",
+      "schema_version": 1
+    },
+    {
+      "name": "Garlic Parmesan",
+      "site_name": "Garlic Parmesan",
+      "gs1_name": "Garlic Parmesan",
+      "slug": "garlic-parmesan",
+      "category": "cheesy",
+      "price_usd": 8,
+      "short_description": "",
+      "long_description": "<section class=\"flavor-description\" aria-labelledby=\"garlicParmesanWhyTitle\">\n              <p class=\"flavor-tagline\">Bold Garlic. Savory Parmesan. One Seriously Delicious Crunch. 🧄🧀🍿</p>\n              <p>Get ready for a flavor combination that was made to be together! Garlic Parmesan Popcorn takes crunchy gourmet popcorn and coats it with delicious garlic Parmesan seasoning for a savory snack packed with bold garlic flavor and rich, cheesy Parmesan goodness.</p>\n              <p>Every handful delivers the satisfying crunch of gourmet popcorn followed by the irresistible combination of savory garlic and Parmesan flavor. It's bold, comforting, and seriously hard to put down.</p>\n              <h2 id=\"garlicParmesanWhyTitle\">Why You'll Love It</h2>\n              <ul class=\"flavor-highlights\">\n                <li>🍿 <strong>Gourmet Popcorn</strong> – Light, crunchy popcorn that provides the perfect base for bold garlic Parmesan flavor.</li>\n                <li>🧄 <strong>Garlic Flavor</strong> – Savory garlic brings a delicious punch to every bite.</li>\n                <li>🧀 <strong>Parmesan Flavor</strong> – Rich, savory Parmesan adds the perfect cheesy finish.</li>\n                <li>😋 <strong>Seriously Snackable</strong> – Perfect for movie nights, parties, game days, road trips, or whenever you're craving something savory.</li>\n              </ul>\n              <h2>Garlic + Parmesan = Snack Magic</h2>\n              <p>There's a reason garlic and Parmesan are such a classic combination.</p>\n              <p>Garlic Parmesan Popcorn takes those craveable flavors and gives them a crunchy, snackable twist. It's savory enough to satisfy, cheesy enough to crave, and crunchy enough to keep you reaching back into the bag.</p>\n              <p>Perfect for garlic lovers, cheese lovers, and anyone looking for a popcorn flavor that's a little more adventurous than the ordinary.</p>\n              <p class=\"flavor-rhythm\">Garlicky. Cheesy. Savory. Crunchy.</p>\n              <h2>The Bottom Line</h2>\n              <p class=\"flavor-finale\"><strong>Garlic Parmesan Seasoning + Gourmet Popcorn = SAVORY CHEESY GARLIC GOODNESS IN EVERY HANDFUL.</strong></p>\n              <p>Grab a bag. Get cheesy. Let the garlic goodness begin.</p>\n              <p class=\"flavor-finale\"><strong>Garlic Parmesan Popcorn — It's Not Just Butter &amp; Salt!</strong></p>\n            </section>",
+      "description": null,
+      "photo": "/img-de694924c2de47f8.webp",
+      "image": "/img-de694924c2de47f8.webp",
+      "gallery_images": [
+        {
+          "src": "/img-de694924c2de47f8.webp",
+          "alt": "Garlic Parmesan gourmet popcorn",
+          "fit": "cover"
+        },
+        {
+          "src": "/img-1bfbdfa198775bae.webp",
+          "alt": "Garlic Parmesan Popcorn nutrition facts and ingredient label",
+          "fit": "contain"
+        }
+      ],
+      "galleryImages": [
+        {
+          "src": "/img-de694924c2de47f8.webp",
+          "alt": "Garlic Parmesan gourmet popcorn",
+          "fit": "cover"
+        },
+        {
+          "src": "/img-1bfbdfa198775bae.webp",
+          "alt": "Garlic Parmesan Popcorn nutrition facts and ingredient label",
+          "fit": "contain"
+        }
+      ],
+      "colors": [
+        "#ded39f",
+        "#8ba36a"
+      ],
+      "upc_a": "794969412478",
+      "gtin_14": "00794969412478",
+      "gs1_digital_link": "https://pop-a-licious.com/01/00794969412478",
+      "qr_image": "/qr/garlic-parmesan.png",
+      "qr_status": "label-read",
+      "upc_source": "label-images/Garlic_Parmesan-1.png",
+      "status": "live",
+      "schema_version": 1
+    },
+    {
+      "name": "Kettle Corn",
+      "site_name": "Kettle Corn",
+      "gs1_name": "Kettle Corn",
+      "slug": "kettle-corn",
+      "category": "sweet",
+      "price_usd": 8,
+      "short_description": "",
+      "long_description": "<section class=\"flavor-description\" aria-labelledby=\"kettleCornWhyTitle\">\n              <p class=\"flavor-tagline\">Sweet. Salty. Crunchy. The Classic Combo. 🍿✨</p>\n              <p>Some snacks don't need to be complicated—they just need to be really, really good.</p>\n              <p>Kettle Corn combines freshly popped gourmet popcorn with the perfect balance of sweet sugar and savory salt, creating that classic sweet-and-salty flavor popcorn lovers can't resist.</p>\n              <p>Every handful delivers light, crunchy popcorn with just the right amount of sweetness followed by a satisfying salty finish. It's simple, nostalgic, and seriously snackable.</p>\n              <h2 id=\"kettleCornWhyTitle\">Why You'll Love It</h2>\n              <ul class=\"flavor-highlights\">\n                <li>🍿 <strong>Gourmet Popcorn</strong> – Light, crunchy kernels popped for the perfect snacking experience.</li>\n                <li>🍬 <strong>Sweet Sugar</strong> – Adds just the right touch of sweetness to every handful.</li>\n                <li>🧂 <strong>Savory Salt</strong> – Balances the sweetness with a satisfying salty finish.</li>\n                <li>⚖️ <strong>Perfectly Balanced</strong> – Sweet meets salty for a flavor combination that's hard to stop eating.</li>\n              </ul>\n              <h2>Sweet Meets Salty</h2>\n              <p>Whether you're at a festival, watching a movie, enjoying a game night, packing a road-trip snack, or simply craving something delicious, Kettle Corn is always ready to deliver.</p>\n              <p>It's the popcorn that proves you don't have to choose between sweet and salty.</p>\n              <p>Why choose one when you can have both?</p>\n              <p class=\"flavor-rhythm\">Sweet. Salty. Crunchy. Classic.</p>\n              <h2>The Bottom Line</h2>\n              <p class=\"flavor-finale\"><strong>Gourmet Popcorn + Sugar + Salt = THE PERFECT SWEET &amp; SALTY CRUNCH.</strong></p>\n              <p>Grab a bag. Find your balance. Keep crunching.</p>\n              <p class=\"flavor-finale\"><strong>Kettle Corn — It's Not Just Butter &amp; Salt!</strong></p>\n            </section>",
+      "description": null,
+      "photo": "/img-3fb8228fd763fbf8.webp",
+      "image": "/img-3fb8228fd763fbf8.webp",
+      "gallery_images": [
+        {
+          "src": "/img-3fb8228fd763fbf8.webp",
+          "alt": "Kettle Corn gourmet popcorn",
+          "fit": "cover"
+        },
+        {
+          "src": "/img-d5f204a6f2f9274a.webp",
+          "alt": "Kettle Corn Popcorn nutrition facts and ingredient label",
+          "fit": "contain"
+        }
+      ],
+      "galleryImages": [
+        {
+          "src": "/img-3fb8228fd763fbf8.webp",
+          "alt": "Kettle Corn gourmet popcorn",
+          "fit": "cover"
+        },
+        {
+          "src": "/img-d5f204a6f2f9274a.webp",
+          "alt": "Kettle Corn Popcorn nutrition facts and ingredient label",
+          "fit": "contain"
+        }
+      ],
+      "colors": [
+        "#e94458",
+        "#f7e29a"
+      ],
+      "upc_a": "602581038191",
+      "gtin_14": "00602581038191",
+      "gs1_digital_link": "https://pop-a-licious.com/01/00602581038191",
+      "qr_image": "/qr/kettle-corn.png",
+      "qr_status": "label-read",
+      "upc_source": "label-images/Kettle_Corn-1.png (code now unique — Cheeseburger moved to 602581038184 Oct 26)",
+      "status": "live",
+      "schema_version": 1
+    },
+    {
+      "name": "Lemonade",
+      "site_name": "Lemonade",
+      "gs1_name": "Lemonade",
+      "slug": "lemonade",
+      "category": "sweet",
+      "price_usd": 8,
+      "short_description": "",
+      "long_description": "<section class=\"flavor-description\" aria-labelledby=\"lemonadeWhyTitle\">\n              <p class=\"flavor-tagline\">Sweet. Tart. Zesty. A Lemonade Stand in Every Bite. 🍿🍋</p>\n              <p>Say hello to popcorn with a serious citrus kick! Lemonade Popcorn takes fresh, tangy lemonade flavor and puts it on crunchy gourmet popcorn for a sweet-and-tart snack that's ridiculously refreshing. It's bright, zesty, and totally unexpected—like your favorite summertime lemonade got turned into popcorn!</p>\n              <h2 id=\"lemonadeWhyTitle\">🍋 Why You'll Love It</h2>\n              <ul class=\"flavor-highlights\">\n                <li>🍿 <strong>Gourmet Popcorn</strong> — Crunchy, fluffy popcorn in every bite.</li>\n                <li>🍋 <strong>Real Lemonade Flavor</strong> — That unmistakable sweet-tart lemonade taste.</li>\n                <li>✨ <strong>Bright &amp; Zesty</strong> — A refreshing citrus punch that wakes up your taste buds.</li>\n                <li>☀️ <strong>Summer in a Bag</strong> — Perfect for warm-weather snacking—or whenever you need a little sunshine.</li>\n                <li>💥 <strong>Totally Unexpected</strong> — Because popcorn doesn't have to be just butter and salt!</li>\n              </ul>\n              <h2>A Lemonade Stand… Made Popcorn. 🍋🍿</h2>\n              <p>Sweet meets tangy in the most snackable way possible. Every bite delivers a burst of lemonade flavor followed by the satisfying crunch of gourmet popcorn.</p>\n              <p>It's refreshing. It's fun. And it's definitely not your average popcorn.</p>\n              <h2>The Bottom Line</h2>\n              <p>Lemonade Popcorn is sunshine, citrus, and crunch—all in one delicious bag. 🍋☀️🍿</p>\n              <p class=\"flavor-finale\"><strong>It's Not Just Butter &amp; Salt!</strong></p>\n            </section>",
+      "description": null,
+      "photo": "/img-79d41c6d29060a57.webp",
+      "image": "/img-79d41c6d29060a57.webp",
+      "gallery_images": [
+        {
+          "src": "/img-79d41c6d29060a57.webp",
+          "alt": "Lemonade gourmet popcorn",
+          "fit": "cover"
+        },
+        {
+          "src": "/img-4a0f9c6eb89e14f6.webp",
+          "alt": "Lemonade Popcorn nutrition facts and ingredient label",
+          "fit": "contain"
+        }
+      ],
+      "galleryImages": [
+        {
+          "src": "/img-79d41c6d29060a57.webp",
+          "alt": "Lemonade gourmet popcorn",
+          "fit": "cover"
+        },
+        {
+          "src": "/img-4a0f9c6eb89e14f6.webp",
+          "alt": "Lemonade Popcorn nutrition facts and ingredient label",
+          "fit": "contain"
+        }
+      ],
+      "colors": [
+        "#f4d91f",
+        "#fff7b8"
+      ],
+      "upc_a": "602581038207",
+      "gtin_14": "00602581038207",
+      "gs1_digital_link": "https://pop-a-licious.com/01/00602581038207",
+      "qr_image": "/qr/lemonade.png",
+      "qr_status": "label-read",
+      "upc_source": "label-images/Lemonade-1.png",
+      "status": "live",
+      "schema_version": 1
+    },
+    {
+      "name": "Muddy Buddy",
+      "site_name": "Muddy Buddy",
+      "gs1_name": "Muddy Buddy",
+      "slug": "muddy-buddy",
+      "category": "sweet",
+      "price_usd": 8,
+      "short_description": "",
+      "long_description": "<section class=\"flavor-description\" aria-labelledby=\"muddyBuddyWhyTitle\">\n              <p class=\"flavor-tagline\">Chocolate. Peanut Butter. Powdered Sugar. Pure Snack Obsession. 🍿🤎</p>\n              <p>Get ready to meet your new favorite sweet treat! Muddy Buddy Popcorn takes crunchy gourmet popcorn and transforms it into a chocolate-and-peanut-butter dream. Coated in rich milk chocolate, creamy peanut butter, and a dusting of sweet powdered sugar, every handful delivers the deliciously indulgent flavor combination that dessert lovers can't resist.</p>\n              <h2 id=\"muddyBuddyWhyTitle\">🍫 Why You’ll Love It</h2>\n              <ul class=\"flavor-highlights\">\n                <li>🍿 <strong>Gourmet Popcorn</strong> — Crunchy, snackable popcorn that makes the perfect base for a sweet treat.</li>\n                <li>🍫 <strong>Milk Chocolate</strong> — Rich, chocolatey goodness in every bite.</li>\n                <li>🥜 <strong>Creamy Peanut Butter</strong> — Adds that smooth, nutty flavor that pairs perfectly with chocolate.</li>\n                <li>❄️ <strong>Powdered Sugar</strong> — A sweet, melt-in-your-mouth finish that completes the classic Muddy Buddy experience.</li>\n                <li>🤎 <strong>Dessert-Worthy Deliciousness</strong> — All your favorite Muddy Buddy flavors in one craveable popcorn creation.</li>\n              </ul>\n              <h2>Your Favorite Chocolate-Peanut Butter Treat Just Got Popped! 🍫🥜</h2>\n              <p>Imagine the irresistible combination of chocolate and peanut butter, finished with a sweet coating of powdered sugar. Now imagine enjoying all that goodness with a satisfying popcorn crunch!</p>\n              <p>Muddy Buddy Popcorn brings together three delicious ingredients for a sweet, rich, and seriously snackable treat. Perfect for movie nights, parties, gifting, or satisfying those chocolate cravings whenever they strike.</p>\n              <h2>The Bottom Line</h2>\n              <p>Rich milk chocolate. Creamy peanut butter. Sweet powdered sugar. One ridiculously delicious popcorn experience. 🍫🥜🍿</p>\n              <p class=\"flavor-finale\"><strong>It’s Not Just Butter &amp; Salt!</strong></p>\n              <h2>🛍️ Short Product Card Version</h2>\n              <p class=\"flavor-tagline\">Muddy Buddy Popcorn 🍫🥜🍿</p>\n              <p>Rich milk chocolate, creamy peanut butter, and sweet powdered sugar come together over crunchy gourmet popcorn for an indulgent, chocolatey treat that's impossible to put down.</p>\n            </section>",
+      "description": null,
+      "photo": "/img-b5d8a0b9278da065.webp",
+      "image": "/img-b5d8a0b9278da065.webp",
+      "gallery_images": [
+        {
+          "src": "/img-b5d8a0b9278da065.webp",
+          "alt": "Muddy Buddy gourmet popcorn coated in powdered sugar with milk chocolate and peanut butter",
+          "fit": "cover"
+        },
+        {
+          "src": "/img-196d5fe861855df9.webp",
+          "alt": "Muddy Buddy Popcorn nutrition facts and ingredient label",
+          "fit": "contain"
+        }
+      ],
+      "galleryImages": [
+        {
+          "src": "/img-b5d8a0b9278da065.webp",
+          "alt": "Muddy Buddy gourmet popcorn coated in powdered sugar with milk chocolate and peanut butter",
+          "fit": "cover"
+        },
+        {
+          "src": "/img-196d5fe861855df9.webp",
+          "alt": "Muddy Buddy Popcorn nutrition facts and ingredient label",
+          "fit": "contain"
+        }
+      ],
+      "colors": [
+        "#744631",
+        "#d7b69f"
+      ],
+      "upc_a": "794969412485",
+      "gtin_14": "00794969412485",
+      "gs1_digital_link": "https://pop-a-licious.com/01/00794969412485",
+      "qr_image": "/qr/muddy-buddy.png",
+      "qr_status": "label-read",
+      "upc_source": "label-images/Muddy_Buddy-1.png",
+      "status": "live",
+      "schema_version": 1
+    },
+    {
+      "name": "Nashville Hot",
+      "site_name": "Nashville Hot",
+      "gs1_name": "Nashville Hot",
+      "slug": "nashville-hot",
+      "category": "savory",
+      "price_usd": 8,
+      "short_description": "",
+      "long_description": "<section class=\"flavor-description\" aria-labelledby=\"nashvilleHotWhyTitle\">\n              <p class=\"flavor-tagline\">Creamy. Spicy. Fiery. Bring on the Heat! 🌶️🔥</p>\n              <p>Ready to turn up the heat? Nashville Hot Popcorn brings bold Southern-inspired spice to crunchy gourmet popcorn with a delicious combination of Liquid Gold cheese sauce and hot sauce seasoning. Creamy, cheesy goodness meets a fiery kick for a flavor-packed snack that brings the heat with every handful!</p>\n              <h2 id=\"nashvilleHotWhyTitle\">🔥 Why You’ll Love It</h2>\n              <ul class=\"flavor-highlights\">\n                <li>🍿 <strong>Gourmet Popcorn</strong> — Crunchy popcorn made for serious snacking.</li>\n                <li>🧀 <strong>Liquid Gold Cheese Sauce</strong> — Adds a rich, creamy, savory layer of cheesy goodness.</li>\n                <li>🌶️ <strong>Hot Sauce Seasoning</strong> — Brings bold heat and a zesty, spicy kick.</li>\n                <li>🔥 <strong>Sweet Spot of Flavor</strong> — Creamy cheese meets fiery seasoning for a seriously craveable combination.</li>\n                <li>💥 <strong>Big Flavor, Bold Attitude</strong> — For snack lovers who like their popcorn with a little fire.</li>\n              </ul>\n              <h2>Cheese Meets Heat. Let the Cravings Begin! 🧀🔥</h2>\n              <p>This isn’t your everyday popcorn. Nashville Hot Popcorn combines the rich flavor of Liquid Gold cheese sauce with the bold kick of hot sauce seasoning to create a snack that’s savory, spicy, and unapologetically flavorful.</p>\n              <p>Perfect for game day, movie night, parties, or whenever you’re ready to spice up your snack routine!</p>\n              <h2>The Bottom Line</h2>\n              <p>Creamy cheese sauce. Fiery hot sauce seasoning. Crunchy popcorn. One bold, heat-packed snack. 🔥🍿</p>\n              <p class=\"flavor-finale\"><strong>It’s Not Just Butter &amp; Salt!</strong></p>\n              <h2>🛍️ Short Product Card Version</h2>\n              <p class=\"flavor-tagline\">Nashville Hot Popcorn 🔥🧀🍿</p>\n              <p>Creamy Liquid Gold cheese sauce meets bold hot sauce seasoning in this spicy, savory gourmet popcorn. Big cheesy flavor, a fiery kick, and a whole lot of crunch in every bite!</p>\n            </section>",
+      "description": null,
+      "photo": "/img-f8e01370752863bf.webp",
+      "image": "/img-f8e01370752863bf.webp",
+      "gallery_images": [
+        {
+          "src": "/img-f8e01370752863bf.webp",
+          "alt": "Nashville Hot gourmet popcorn",
+          "fit": "cover"
+        },
+        {
+          "src": "/img-nashville-hot-nutrition.webp",
+          "alt": "Nashville Hot Popcorn nutrition facts and ingredient label",
+          "fit": "contain"
+        }
+      ],
+      "galleryImages": [
+        {
+          "src": "/img-f8e01370752863bf.webp",
+          "alt": "Nashville Hot gourmet popcorn",
+          "fit": "cover"
+        },
+        {
+          "src": "/img-nashville-hot-nutrition.webp",
+          "alt": "Nashville Hot Popcorn nutrition facts and ingredient label",
+          "fit": "contain"
+        }
+      ],
+      "colors": [
+        "#b9261c",
+        "#ef9a33"
+      ],
+      "upc_a": "602581038016",
+      "gtin_14": "00602581038016",
+      "gs1_digital_link": "https://pop-a-licious.com/01/00602581038016",
+      "qr_image": "/qr/nashville-hot.png",
+      "qr_status": "audit-assigned",
+      "upc_source": "GS1 barcode audit Nov 20, 2026 — free house code 602581038016",
+      "status": "live",
+      "schema_version": 1
+    },
+    {
+      "name": "Pizza",
+      "site_name": "Pizza",
+      "gs1_name": "Pizza",
+      "slug": "pizza",
+      "category": "cheesy",
+      "price_usd": 8,
+      "short_description": "",
+      "long_description": "<section class=\"flavor-description\" aria-labelledby=\"pizzaWhyTitle\">\n              <p class=\"flavor-tagline\">Pizza Night Just Got Crunchy. 🍕🍿</p>\n              <p>Why wait for the delivery driver? Pizza Popcorn brings the bold, savory flavor of your favorite pizza straight to a bag of crunchy gourmet popcorn. Coated with delicious pizza seasoning, every bite delivers a craveable combination of classic pizza-inspired flavor and satisfying popcorn crunch.</p>\n              <h2 id=\"pizzaWhyTitle\">🍕 Why You'll Love It</h2>\n              <ul class=\"flavor-highlights\">\n                <li>🍿 <strong>Gourmet Popcorn</strong> — Fresh, crunchy popcorn in every handful.</li>\n                <li>🍕 <strong>Bold Pizza Seasoning</strong> — Packed with savory pizza-inspired flavor.</li>\n                <li>🔥 <strong>Seriously Craveable</strong> — One handful quickly turns into another.</li>\n                <li>🎉 <strong>Pizza Without the Plate</strong> — All the fun of pizza flavor in an easy-to-eat snack.</li>\n                <li>💥 <strong>Totally Unexpected</strong> — Because popcorn can taste like pizza!</li>\n              </ul>\n              <h2>Pizza Flavor. Popcorn Crunch. 🍕🍿</h2>\n              <p>Imagine your favorite pizza flavors transformed into a crunchy snack you can take anywhere. Pizza Popcorn delivers savory, zesty pizza seasoning over every kernel for a seriously snackable experience.</p>\n              <p>Movie night? Game night? Road trip? Pizza Popcorn belongs there.</p>\n              <h2>The Bottom Line</h2>\n              <p>Pizza Popcorn is what happens when pizza meets popcorn—and the result is deliciously addictive. 🍕🍿</p>\n              <p class=\"flavor-finale\"><strong>It's Not Just Butter &amp; Salt!</strong></p>\n            </section>",
+      "description": null,
+      "photo": "/img-a10be16f9a02fef7.webp",
+      "image": "/img-a10be16f9a02fef7.webp",
+      "gallery_images": [
+        {
+          "src": "/img-a10be16f9a02fef7.webp",
+          "alt": "Pizza gourmet popcorn",
+          "fit": "cover"
+        },
+        {
+          "src": "/img-1aedceb0bf3a5513.webp",
+          "alt": "Pizza Popcorn nutrition facts and ingredient label",
+          "fit": "contain"
+        }
+      ],
+      "galleryImages": [
+        {
+          "src": "/img-a10be16f9a02fef7.webp",
+          "alt": "Pizza gourmet popcorn",
+          "fit": "cover"
+        },
+        {
+          "src": "/img-1aedceb0bf3a5513.webp",
+          "alt": "Pizza Popcorn nutrition facts and ingredient label",
+          "fit": "contain"
+        }
+      ],
+      "colors": [
+        "#d7442d",
+        "#f0b747"
+      ],
+      "upc_a": "669423097037",
+      "gtin_14": "00669423097037",
+      "gs1_digital_link": "https://pop-a-licious.com/01/00669423097037",
+      "qr_image": "/qr/pizza.png",
+      "qr_status": "bag-verified",
+      "upc_source": "physical bag verified Oct 20; label file replaced Oct 26 (barcode 669423097037, matches bag)",
+      "status": "live",
+      "schema_version": 1
+    },
+    {
+      "name": "Salt & Vinegar",
+      "site_name": "Salt & Vinegar",
+      "gs1_name": "Salt and Vinegar",
+      "slug": "salt-and-vinegar",
+      "category": "savory",
+      "price_usd": 8,
+      "short_description": "",
+      "long_description": "<section class=\"flavor-description\" aria-labelledby=\"saltVinegarWhyTitle\">\n              <p class=\"flavor-tagline\">Tangy. Salty. Seriously Addictive. 🍿💥</p>\n              <p>If you love that unmistakable salt and vinegar kick, get ready to meet your new favorite popcorn. Salt &amp; Vinegar Popcorn combines crunchy gourmet popcorn with bold salt and vinegar seasoning for a mouthwatering snack that hits your taste buds with the perfect tangy, savory punch.</p>\n              <h2 id=\"saltVinegarWhyTitle\">🧂 Why You'll Love It</h2>\n              <ul class=\"flavor-highlights\">\n                <li>🍿 <strong>Gourmet Popcorn</strong> — Light, crunchy, and ready for serious snacking.</li>\n                <li>🍶 <strong>Bold Vinegar Flavor</strong> — Tangy, zesty, and unmistakably vinegar-forward.</li>\n                <li>🧂 <strong>Perfectly Salty</strong> — Just the right savory balance to complement the tang.</li>\n                <li>💥 <strong>Big Flavor in Every Bite</strong> — That classic salt-and-vinegar experience from the first handful to the last.</li>\n                <li>😋 <strong>Craveable Crunch</strong> — Once you start, putting the bag down might be the hardest part.</li>\n              </ul>\n              <h2>The Tangy Crunch You Crave. 🍿🧂</h2>\n              <p>Salt &amp; Vinegar Popcorn takes one of the most iconic snack flavor combinations and gives it a Pop-A-Licious twist. Every kernel is seasoned with a bold blend of salt and vinegar flavor for a snack that's tangy, savory, and seriously satisfying.</p>\n              <p>Perfect for movie nights, road trips, game days, or whenever your taste buds demand something with a little attitude.</p>\n              <h2>The Bottom Line</h2>\n              <p>Bold vinegar. Savory salt. Crunchy popcorn. That's one seriously flavorful snack. 🧂🍶🍿</p>\n              <p class=\"flavor-finale\"><strong>It's Not Just Butter &amp; Salt!</strong></p>\n            </section>",
+      "description": null,
+      "photo": "/img-db6f1d368b184686.webp",
+      "image": "/img-db6f1d368b184686.webp",
+      "gallery_images": [
+        {
+          "src": "/img-db6f1d368b184686.webp",
+          "alt": "Salt & Vinegar gourmet popcorn",
+          "fit": "cover"
+        },
+        {
+          "src": "/img-510a9eb739b6eb3b.webp",
+          "alt": "Salt & Vinegar Popcorn nutrition facts and ingredient label",
+          "fit": "contain"
+        }
+      ],
+      "galleryImages": [
+        {
+          "src": "/img-db6f1d368b184686.webp",
+          "alt": "Salt & Vinegar gourmet popcorn",
+          "fit": "cover"
+        },
+        {
+          "src": "/img-510a9eb739b6eb3b.webp",
+          "alt": "Salt & Vinegar Popcorn nutrition facts and ingredient label",
+          "fit": "contain"
+        }
+      ],
+      "colors": [
+        "#4ca6b8",
+        "#d8f0e9"
+      ],
+      "upc_a": "602581038009",
+      "gtin_14": "00602581038009",
+      "gs1_digital_link": "https://pop-a-licious.com/01/00602581038009",
+      "qr_image": "/qr/salt-and-vinegar.png",
+      "qr_status": "label-read",
+      "upc_source": "label artwork replaced Oct 26 (user-supplied, barcode 602581038009)",
+      "status": "live",
+      "schema_version": 1
+    },
+    {
+      "name": "Snickerdoodle",
+      "site_name": "Snickerdoodle",
+      "gs1_name": "Snickerdoodle",
+      "slug": "snickerdoodle",
+      "category": "sweet",
+      "price_usd": 8,
+      "short_description": "",
+      "long_description": "<section class=\"flavor-description\" aria-labelledby=\"snickerdoodleWhyTitle\">\n              <p class=\"flavor-tagline\">Cinnamon. Sugar. Cookie Magic. All Over Popcorn. 🍿🍪</p>\n              <p>Get ready for a sweet twist on a classic cookie! Snickerdoodle Popcorn combines crunchy gourmet popcorn with delicious snickerdoodle cookie mix and a generous coating of cinnamon sugar. The result is a warm, sweet, cinnamon-packed snack that tastes like your favorite homemade snickerdoodle cookie—only crunchier!</p>\n              <h2 id=\"snickerdoodleWhyTitle\">🍪 Why You'll Love It</h2>\n              <ul class=\"flavor-highlights\">\n                <li>🍿 <strong>Gourmet Popcorn</strong> — Light, crunchy popcorn made for serious snacking.</li>\n                <li>🍪 <strong>Snickerdoodle Cookie Mix</strong> — Brings that classic sweet, buttery cookie flavor.</li>\n                <li>✨ <strong>Cinnamon Sugar</strong> — Adds the perfect sweet cinnamon finish.</li>\n                <li>🤎 <strong>Cozy Cookie Flavor</strong> — Warm, nostalgic, and ridiculously delicious.</li>\n                <li>😋 <strong>Dessert in Every Handful</strong> — Perfect when you're craving something sweet.</li>\n              </ul>\n              <h2>Your Favorite Cookie Just Got Popped. 🍪🍿</h2>\n              <p>Snickerdoodle cookies are famous for their irresistible cinnamon-sugar coating—and we took that delicious idea and gave it a Pop-A-Licious makeover.</p>\n              <p>Every handful combines crunchy popcorn, sweet snickerdoodle cookie flavor, and cinnamon sugar for a snack that's comforting, fun, and seriously craveable.</p>\n              <h2>The Bottom Line</h2>\n              <p>Snickerdoodle Popcorn is the warm, sweet, cinnamon-sugar cookie experience you love—with an unforgettable popcorn crunch. 🍪✨🍿</p>\n              <p class=\"flavor-finale\"><strong>It's Not Just Butter &amp; Salt!</strong></p>\n            </section>",
+      "description": null,
+      "photo": "/img-4b3f739c058b0244.webp",
+      "image": "/img-4b3f739c058b0244.webp",
+      "gallery_images": [
+        {
+          "src": "/img-4b3f739c058b0244.webp",
+          "alt": "Snickerdoodle gourmet popcorn",
+          "fit": "cover"
+        },
+        {
+          "src": "/img-34d9b9a3e785b6f3.webp",
+          "alt": "Snickerdoodle Popcorn nutrition facts and ingredient label",
+          "fit": "contain"
+        }
+      ],
+      "galleryImages": [
+        {
+          "src": "/img-4b3f739c058b0244.webp",
+          "alt": "Snickerdoodle gourmet popcorn",
+          "fit": "cover"
+        },
+        {
+          "src": "/img-34d9b9a3e785b6f3.webp",
+          "alt": "Snickerdoodle Popcorn nutrition facts and ingredient label",
+          "fit": "contain"
+        }
+      ],
+      "colors": [
+        "#b87943",
+        "#f5d99d"
+      ],
+      "upc_a": "602581038214",
+      "gtin_14": "00602581038214",
+      "gs1_digital_link": "https://pop-a-licious.com/01/00602581038214",
+      "qr_image": "/qr/snickerdoodle.png",
+      "qr_status": "label-read",
+      "upc_source": "label-images/Snickerdoodle-1.png",
+      "status": "live",
+      "schema_version": 1
+    },
+    {
+      "name": "Strawberry Cheesecake",
+      "site_name": "Strawberry Cheesecake",
+      "gs1_name": "Strawberry Cheesecake",
+      "slug": "strawberry-cheesecake",
+      "category": "sweet",
+      "price_usd": 8,
+      "short_description": "",
+      "long_description": "<section class=\"flavor-description\" aria-labelledby=\"strawberryCheesecakeWhyTitle\">\n              <p class=\"flavor-tagline\">Strawberry. Cheesecake. Graham Cracker Crunch. Popcorn Perfection. 🍓🍰🍿</p>\n              <p>Your favorite dessert just got a seriously crunchy makeover! Strawberry Cheesecake Popcorn combines gourmet popcorn with (red) white chocolate, strawberry cheesecake, and crunchy graham cracker crumbs for a sweet, creamy, berry-filled treat that tastes like a slice of strawberry cheesecake in every handful.</p>\n              <h2 id=\"strawberryCheesecakeWhyTitle\">🍓 Why You'll Love It</h2>\n              <ul class=\"flavor-highlights\">\n                <li>🍿 <strong>Gourmet Popcorn</strong> — Light, crunchy popcorn made for serious snacking.</li>\n                <li>🍓 <strong>Strawberry Cheesecake Flavor</strong> — Sweet, creamy, and bursting with delicious strawberry flavor.</li>\n                <li>🍫 <strong>(red) white chocolate</strong> — Smooth, sweet, and adds an irresistible decadent finish.</li>\n                <li>🍪 <strong>Graham Cracker Crumbs</strong> — Brings that classic cheesecake crust crunch.</li>\n                <li>🍰 <strong>Dessert-Inspired</strong> — All the flavors of strawberry cheesecake without needing a fork!</li>\n              </ul>\n              <h2>Cheesecake Night Just Got Crunchy. 🍓🍰</h2>\n              <p>Imagine biting into a creamy slice of strawberry cheesecake with its sweet strawberry topping and buttery graham cracker crust. Now imagine all of that goodness covering crunchy gourmet popcorn.</p>\n              <p>That's Strawberry Cheesecake Popcorn.</p>\n              <p>The sweet (red) white chocolate pairs perfectly with strawberry cheesecake flavor, while graham cracker crumbs add the crunchy finishing touch that makes every handful feel like dessert.</p>\n              <h2>The Bottom Line</h2>\n              <p>Strawberry Cheesecake Popcorn turns a classic dessert into an irresistible gourmet snack—sweet, creamy, crunchy, and totally Pop-A-Licious. 🍓🍰🍿</p>\n              <p class=\"flavor-finale\"><strong>It's Not Just Butter &amp; Salt!</strong></p>\n            </section>",
+      "description": null,
+      "photo": "/img-1a4220b537014c70.webp",
+      "image": "/img-1a4220b537014c70.webp",
+      "gallery_images": [
+        {
+          "src": "/img-1a4220b537014c70.webp",
+          "alt": "Strawberry Cheesecake gourmet popcorn",
+          "fit": "cover"
+        },
+        {
+          "src": "/img-e41e62bfb73f9e29.webp",
+          "alt": "Strawberry Cheesecake Popcorn nutrition facts and ingredient label",
+          "fit": "contain"
+        }
+      ],
+      "galleryImages": [
+        {
+          "src": "/img-1a4220b537014c70.webp",
+          "alt": "Strawberry Cheesecake gourmet popcorn",
+          "fit": "cover"
+        },
+        {
+          "src": "/img-e41e62bfb73f9e29.webp",
+          "alt": "Strawberry Cheesecake Popcorn nutrition facts and ingredient label",
+          "fit": "contain"
+        }
+      ],
+      "colors": [
+        "#e85a72",
+        "#f8c9bc"
+      ],
+      "upc_a": "766429062677",
+      "gtin_14": "00766429062677",
+      "gs1_digital_link": "https://pop-a-licious.com/01/00766429062677",
+      "qr_image": "/qr/strawberry-cheesecake.png",
+      "qr_status": "label-read",
+      "upc_source": "label-images/Strawberry_Cheesecake-1.png (code now unique — Salt and Vinegar moved to 602581038009 Oct 26)",
+      "status": "live",
+      "schema_version": 1
+    },
+    {
+      "name": "Sugar Cookie",
+      "site_name": "Sugar Cookie",
+      "gs1_name": "Sugar Cookie",
+      "slug": "sugar-cookie",
+      "category": "sweet",
+      "price_usd": 8,
+      "short_description": "",
+      "long_description": "<section class=\"flavor-description\" aria-labelledby=\"sugarCookieWhyTitle\">\n              <p class=\"flavor-tagline\">Sweet. Creamy. Colorful. A Sugar Cookie in Every Bite. 🍿🍪</p>\n              <p>Your favorite classic cookie just got a Pop-A-Licious makeover! Sugar Cookie Popcorn combines crunchy gourmet popcorn with smooth white chocolate, sweet sugar cookie mix, and festive red and green sprinkles. The result is a deliciously sweet, creamy, crunchy treat that tastes like a freshly baked sugar cookie—only with an extra-pop of fun!</p>\n              <h2 id=\"sugarCookieWhyTitle\">🍪 Why You'll Love It</h2>\n              <ul class=\"flavor-highlights\">\n                <li>🍿 <strong>Gourmet Popcorn</strong> — Light, crunchy popcorn that's perfect for snacking.</li>\n                <li>🍫 <strong>White Chocolate</strong> — Smooth, creamy sweetness coats the popcorn.</li>\n                <li>🍪 <strong>Sugar Cookie Mix</strong> — Delivers that classic sweet, buttery cookie flavor.</li>\n                <li>🎉 <strong>Red &amp; Green Sprinkles</strong> — Add a festive pop of color and extra fun.</li>\n                <li>✨ <strong>Dessert-Inspired</strong> — All the nostalgic flavor of a sugar cookie in every handful.</li>\n              </ul>\n              <h2>Your Favorite Sugar Cookie Just Got Crunchy. 🍪🍿</h2>\n              <p>There's something magical about a classic sugar cookie—sweet, buttery, creamy, and covered in colorful sprinkles.</p>\n              <p>We took those flavors and turned them into a gourmet popcorn experience.</p>\n              <p>White chocolate brings the creamy sweetness, sugar cookie mix delivers that irresistible bakery flavor, and red and green sprinkles make every handful look like a celebration.</p>\n              <h2>The Bottom Line</h2>\n              <p>Sugar Cookie Popcorn is sweet, creamy, crunchy, and festive—the perfect treat when you're craving cookie goodness by the handful. 🍪✨🍿</p>\n              <p class=\"flavor-finale\"><strong>It's Not Just Butter &amp; Salt!</strong></p>\n            </section>",
+      "description": null,
+      "photo": "/img-1b9b54e5d5881dde.webp",
+      "image": "/img-1b9b54e5d5881dde.webp",
+      "gallery_images": [
+        {
+          "src": "/img-1b9b54e5d5881dde.webp",
+          "alt": "Sugar Cookie gourmet popcorn",
+          "fit": "cover"
+        },
+        {
+          "src": "/img-6e2cf31150b4f563.webp",
+          "alt": "Sugar Cookie Popcorn nutrition facts and ingredient label",
+          "fit": "contain"
+        }
+      ],
+      "galleryImages": [
+        {
+          "src": "/img-1b9b54e5d5881dde.webp",
+          "alt": "Sugar Cookie gourmet popcorn",
+          "fit": "cover"
+        },
+        {
+          "src": "/img-6e2cf31150b4f563.webp",
+          "alt": "Sugar Cookie Popcorn nutrition facts and ingredient label",
+          "fit": "contain"
+        }
+      ],
+      "colors": [
+        "#da8baf",
+        "#f7e3c5"
+      ],
+      "upc_a": "602581038153",
+      "gtin_14": "00602581038153",
+      "gs1_digital_link": "https://pop-a-licious.com/01/00602581038153",
+      "qr_image": "/qr/sugar-cookie.png",
+      "qr_status": "label-read",
+      "upc_source": "label-images/Sugar_Cookie-1.png",
+      "status": "live",
+      "schema_version": 1
+    },
+    {
+      "name": "White Cheddar",
+      "site_name": "White Cheddar",
+      "gs1_name": "White Cheddar",
+      "slug": "white-cheddar",
+      "category": "cheesy",
+      "price_usd": 8,
+      "short_description": "",
+      "long_description": "<section class=\"flavor-description\" aria-labelledby=\"whiteCheddarWhyTitle\">\n              <p class=\"flavor-tagline\">Creamy. Cheesy. Seriously Delicious. 🧀🍿</p>\n              <p>Say hello to popcorn with a serious cheese obsession! White Cheddar Popcorn starts with crunchy gourmet popcorn and gets coated in creamy Liquid White Cheddar for a rich, savory flavor that delivers cheesy goodness in every bite.</p>\n              <h2 id=\"whiteCheddarWhyTitle\">🧀 Why You'll Love It</h2>\n              <ul class=\"flavor-highlights\">\n                <li>🍿 <strong>Gourmet Popcorn</strong> — Light, crunchy popcorn that's perfect for snacking.</li>\n                <li>🧀 <strong>Liquid White Cheddar</strong> — Real creamy cheese flavor coats the popcorn for an indulgent bite.</li>\n                <li>✨ <strong>Rich &amp; Savory</strong> — Big cheddar flavor without overpowering the popcorn.</li>\n                <li>😋 <strong>Seriously Cheesy</strong> — Every handful brings that craveable white cheddar taste.</li>\n                <li>💥 <strong>A Cheesy Upgrade</strong> — Because ordinary popcorn deserves an upgrade.</li>\n              </ul>\n              <h2>White Cheddar. The Pop-A-Licious Way. 🧀🍿</h2>\n              <p>Forget boring cheese popcorn. White Cheddar Popcorn brings the creamy, savory goodness of white cheddar together with the satisfying crunch of gourmet popcorn.</p>\n              <p>Every kernel gets coated in Liquid White Cheddar, creating a deliciously rich snack that's perfect for movie nights, game days, road trips, parties, or simply grabbing a handful whenever the cheese craving hits.</p>\n              <h2>The Bottom Line</h2>\n              <p>Creamy Liquid White Cheddar + crunchy gourmet popcorn = one seriously cheesy snack. 🧀🍿</p>\n              <p class=\"flavor-finale\"><strong>It's Not Just Butter &amp; Salt!</strong></p>\n            </section>",
+      "description": null,
+      "photo": "/img-11578522b9e5bcb9.webp",
+      "image": "/img-11578522b9e5bcb9.webp",
+      "gallery_images": [
+        {
+          "src": "/img-11578522b9e5bcb9.webp",
+          "alt": "White Cheddar gourmet popcorn",
+          "fit": "cover"
+        },
+        {
+          "src": "/img-7238a42563683258.webp",
+          "alt": "White Cheddar Popcorn nutrition facts and ingredient label",
+          "fit": "contain"
+        }
+      ],
+      "galleryImages": [
+        {
+          "src": "/img-11578522b9e5bcb9.webp",
+          "alt": "White Cheddar gourmet popcorn",
+          "fit": "cover"
+        },
+        {
+          "src": "/img-7238a42563683258.webp",
+          "alt": "White Cheddar Popcorn nutrition facts and ingredient label",
+          "fit": "contain"
+        }
+      ],
+      "colors": [
+        "#d8c788",
+        "#f7f1dc"
+      ],
+      "upc_a": "766429062660",
+      "gtin_14": "00766429062660",
+      "gs1_digital_link": "https://pop-a-licious.com/01/00766429062660",
+      "qr_image": "/qr/white-cheddar.png",
+      "qr_status": "label-read",
+      "upc_source": "label-images/White_Cheddar-1.png",
+      "status": "live",
+      "schema_version": 1
+    }
+  ]
+}
