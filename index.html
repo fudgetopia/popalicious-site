@@ -7118,6 +7118,9 @@
         var verificationEmail = "";
         var validatedDiscountCode = "";
         var validatedDiscountType = "";
+        var validatedDiscountPercent = 0;
+        var validatedDiscountFlavors = null;
+        var validatedDiscountFixedCents = 0;
         var pendingRewardCode = "";
         var pendingRewardCartKey = "";
         var shippingRate = null;
@@ -13801,6 +13804,11 @@
         function resetDiscountCodeValidation() {
           validatedDiscountCode = "";
           validatedDiscountType = "";
+          validatedDiscountPercent = 0;
+          validatedDiscountFlavors = null;
+          validatedDiscountFixedCents = 0;
+          var discountLine = document.getElementById("checkoutDiscountLine");
+          if (discountLine) discountLine.hidden = true;
           var status = document.getElementById("checkoutDiscountStatus");
           status.textContent = "";
           status.removeAttribute("data-state");
@@ -13851,18 +13859,61 @@
           line.hidden = false;
           updateCheckoutTotal();
         }
+        function promoBagKey(name) {
+          var ascii = String(name || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+          var key = ascii.toUpperCase().replace(/&/g, " AND ").replace(/[^A-Z0-9 ]/g, " ").replace(/\s+/g, " ").trim().replace(/\bN\b/g, "AND");
+          if (key === "COOKIES N CREME" || key === "COOKIES AND CREME" || key === "COOKIES AND CREAM") return "COOKIE AND CREAM";
+          return key;
+        }
+        function checkoutDiscountCents() {
+          if (validatedDiscountType === "promo" && validatedDiscountPercent > 0) {
+            var flavorKeys = {};
+            selectableFlavors().forEach(function (product) { flavorKeys[promoBagKey(product.name)] = true; });
+            var scopeKeys = null;
+            if (validatedDiscountFlavors && validatedDiscountFlavors.length) {
+              scopeKeys = {};
+              validatedDiscountFlavors.forEach(function (flavor) { scopeKeys[promoBagKey(flavor)] = true; });
+            }
+            var eligible = 0;
+            orderItems().forEach(function (item) {
+              var key = promoBagKey(item.name);
+              if (!flavorKeys[key]) return;
+              if (scopeKeys && !scopeKeys[key]) return;
+              eligible += item.amount_cents * item.quantity;
+            });
+            return Math.floor(eligible * validatedDiscountPercent / 100);
+          }
+          if ((validatedDiscountType === "gift_card" || validatedDiscountType === "reward") && validatedDiscountFixedCents > 0) {
+            return Math.min(validatedDiscountFixedCents, cartSubtotalCents());
+          }
+          return 0;
+        }
+        function renderCheckoutDiscount() {
+          var line = document.getElementById("checkoutDiscountLine");
+          if (!line) return;
+          var discount = checkoutDiscountCents();
+          if (discount > 0) {
+            document.getElementById("checkoutDiscountLabel").textContent = "Discount (" + validatedDiscountCode + ")";
+            document.getElementById("checkoutDiscountAmount").textContent = "-$" + (discount / 100).toFixed(2);
+            line.hidden = false;
+          } else {
+            line.hidden = true;
+          }
+        }
         function updateCheckoutTotal() {
           var totalEl = document.getElementById("checkoutTotalAmount");
           var labelEl = document.getElementById("checkoutTotalLabel");
           if (!totalEl) return;
-          var total = cartSubtotalCents() + subscriptionCartTotalCents();
+          var discount = checkoutDiscountCents();
+          var total = cartSubtotalCents() + subscriptionCartTotalCents() - discount;
           if (shippingRate) total += shippingRate.amount_cents;
           if (merchShippingRate) total += merchShippingRate.amount_cents;
           totalEl.textContent = money(total / 100);
+          renderCheckoutDiscount();
           if (labelEl) {
             var notes = [];
             if (!shippingRate && !merchShippingRate) notes.push("before shipping");
-            if (typeof validatedDiscountCode !== "undefined" && validatedDiscountCode) notes.push("before discount");
+            if (typeof validatedDiscountCode !== "undefined" && validatedDiscountCode && discount <= 0) notes.push("before discount");
             labelEl.textContent = notes.length ? "Total (" + notes.join(" and ") + ")" : "Total";
           }
         }
@@ -14068,6 +14119,9 @@
             document.getElementById("checkoutDiscountCode").value = pendingRewardCode;
             validatedDiscountCode = pendingRewardCode;
             validatedDiscountType = "reward";
+            validatedDiscountPercent = 0;
+            validatedDiscountFlavors = null;
+            validatedDiscountFixedCents = 0;
             setDiscountPanel(true);
             document.getElementById("checkoutDiscountDescription").textContent = "Pop-A-Licious Rewards code";
             document.getElementById("checkoutDiscountResult").hidden = false;
@@ -14090,6 +14144,7 @@
             });
           }
           summaryHtml += '<div class="summary-line summary-total"><span>Subtotal</span><span>' + money(cartSubtotalCents() / 100) + '</span></div>';
+          summaryHtml += '<div class="summary-line" id="checkoutDiscountLine" hidden><span id="checkoutDiscountLabel">Discount</span><span id="checkoutDiscountAmount"></span></div>';
           if (subscriptionCart.length) {
             summaryHtml += '<div class="summary-line"><span>First delivery subscriptions</span><span>' + money(subscriptionCartTotalCents() / 100) + '</span></div>';
           }
@@ -14251,10 +14306,14 @@
           if (/^KERN-[A-F0-9]{8}$/.test(code)) {
             validatedDiscountCode = code;
             validatedDiscountType = "reward";
+            validatedDiscountPercent = 0;
+            validatedDiscountFlavors = null;
+            validatedDiscountFixedCents = 0;
             document.getElementById("checkoutDiscountDescription").textContent = "Pop-A-Licious Rewards code";
             result.hidden = false;
             status.textContent = "Reward code added. It will be verified when you pay.";
             status.setAttribute("data-state", "success");
+            updateCheckoutTotal();
             return true;
           }
           button.disabled = true;
@@ -14272,10 +14331,14 @@
             var discountDescription = data.description || data.label || (data.type === "reward" ? "Pop-A-Licious Rewards code" : "Gift card");
             validatedDiscountCode = code;
             validatedDiscountType = data.type;
+            validatedDiscountPercent = Number(data.percent_off) || 0;
+            validatedDiscountFlavors = (data.flavors && data.flavors.length) ? data.flavors : null;
+            validatedDiscountFixedCents = data.type === "gift_card" ? (Number(data.balance_cents) || 0) : (Number(data.discount_cents) || 0);
             document.getElementById("checkoutDiscountDescription").textContent = discountDescription;
             result.hidden = false;
             status.textContent = data.type === "gift_card" ? "Gift card applied." : (data.type === "reward" ? "Reward applied." : "Discount applied.");
             status.setAttribute("data-state", "success");
+            updateCheckoutTotal();
             return true;
           } catch (error) {
             status.textContent = error instanceof TypeError ? "We couldn't connect to the discount service. Please try again." : error.message;
